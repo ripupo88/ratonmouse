@@ -23,25 +23,71 @@ export const Sec1 = () => {
                         review de algún ratón. Recopilamos toda la información
                         posible, testeamos los que más nos llamen la atención y
                         leemos las valoraciones de miles de clientes que ya lo
-                        hayan comprado y cuente su experiencia.{' '}
+                        hayan comprado y han contado su experiencia.{' '}
                     </p>
                     <div>
-                        <div className='card' style={{ width: '18rem' }}>
-                            <div className='card-body'>
-                                <h5 className='card-title'>Gaming</h5>
-                                <h6 className='card-subtitle mb-2 text-muted'>
-                                    Para jugadores
-                                </h6>
-                                <p className='card-text'>
-                                    Maximas prestaciones para sacar el mejor
-                                    rendiomiento en los juego
-                                </p>
-                                <a href='#' className='card-link'>
-                                    Guia
-                                </a>
-                                <a href='#' className='card-link'>
-                                    Recomendaciones
-                                </a>
+                        <div className='card-group'>
+                            <div className='card'>
+                                <img
+                                    src='./assets/img/ratongaming.jpg'
+                                    className='card-img-top'
+                                    alt='...'
+                                />
+                                <div className='card-body'>
+                                    <h5 className='card-title'>Card title</h5>
+                                    <p className='card-text'>
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This content is a
+                                        little bit longer.
+                                    </p>
+                                    <p className='card-text'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='card'>
+                                <img
+                                    src='./assets/img/ratongaming.jpg'
+                                    className='card-img-top'
+                                    alt='...'
+                                />
+                                <div className='card-body'>
+                                    <h5 className='card-title'>Card title</h5>
+                                    <p className='card-text'>
+                                        This card has supporting text below as a
+                                        natural lead-in to additional content.
+                                    </p>
+                                    <p className='card-text'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div className='card'>
+                                <img
+                                    src='./assets/img/ratongaming.jpg'
+                                    className='card-img-top'
+                                    alt='...'
+                                />
+                                <div className='card-body'>
+                                    <h5 className='card-title'>Card title</h5>
+                                    <p className='card-text'>
+                                        This is a wider card with supporting
+                                        text below as a natural lead-in to
+                                        additional content. This card has even
+                                        longer content than the first to show
+                                        that equal height action.
+                                    </p>
+                                    <p className='card-text'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -12,7 +12,7 @@ export const Sec1 = () => {
                         src='./assets/img/ratonordenador.jpg'
                     />
                     <div className='row'>
-                        <div className='col-md-10 m-auto'>
+                        <div className='col-md-8 m-auto'>
                             <h1 className='text-center'>Raton de ordenador</h1>
                             <p>
                                 En esta web tenemos una misión, recomendarte
@@ -46,11 +46,11 @@ export const Sec1 = () => {
                                             y obtener los mejores resultados en
                                             sus partidas online
                                         </p>
-                                        <p className='card-text'>
-                                            <small className='text-muted'>
-                                                Last updated 3 mins ago
-                                            </small>
-                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
                                     </div>
                                 </div>
                                 <div className='card'>
@@ -69,11 +69,11 @@ export const Sec1 = () => {
                                             cable y y quieren sentirses
                                             totalmente libre.
                                         </p>
-                                        <p className='card-text'>
-                                            <small className='text-muted'>
-                                                Last updated 3 mins ago
-                                            </small>
-                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
                                     </div>
                                 </div>
                                 <div className='card'>
@@ -90,11 +90,11 @@ export const Sec1 = () => {
                                             renunciar a la calidad y a
                                             prestaciones de primera
                                         </p>
-                                        <p className='card-text'>
-                                            <small className='text-muted'>
-                                                Last updated 3 mins ago
-                                            </small>
-                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <small className='text-muted'>
+                                            Last updated 3 mins ago
+                                        </small>
                                     </div>
                                 </div>
                             </div>

@@ -7,22 +7,22 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 h1 {
-    font-size: 55px;
+    font-size: 50px;
     margin-top: 1em;
 }
 h2 {
-    font-size: 50px;
+    font-size: 45px;
     margin-top: 1em;
 }
 
 h3 {
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 1em;
     text-align: left;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #26263adc;
     line-height: 1.3em;
 }

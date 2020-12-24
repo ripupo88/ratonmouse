@@ -12,8 +12,10 @@ export const Sec1 = () => {
                         src='./assets/img/ratonordenador.jpg'
                     />
                     <div className='row'>
-                        <div className='col-md-8 m-auto'>
-                            <h1 className='text-center'>Raton de ordenador</h1>
+                        <div className='col-md-8 m-auto '>
+                            <h1 className='text-center'>
+                                Ratones de ordenador
+                            </h1>
                             <p>
                                 En esta web tenemos una misión, recomendarte
                                 siempre la mejor opción que tienes en el mercado
@@ -29,75 +31,6 @@ export const Sec1 = () => {
                                 de miles de clientes que ya lo hayan comprado y
                                 han contado su experiencia.{' '}
                             </p>
-                        </div>
-                        <div className='col-md-8 m-auto mt-5'>
-                            <div className='card-group'>
-                                <div className='card'>
-                                    <img
-                                        src='./assets/img/ratongaming.jpg'
-                                        className='card-img-top'
-                                        alt='...'
-                                    />
-                                    <div className='card-body'>
-                                        <h5 className='card-title'>GAMING</h5>
-                                        <p className='card-text'>
-                                            Para los jugadores más exigentes que
-                                            quieren sacar el maximo rendimiento
-                                            y obtener los mejores resultados en
-                                            sus partidas online
-                                        </p>
-                                    </div>
-                                    <div className='card-footer'>
-                                        <small className='text-muted'>
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </div>
-                                </div>
-                                <div className='card'>
-                                    <img
-                                        src='./assets/img/ratoninalambrico.jpg'
-                                        className='card-img-top'
-                                        alt='...'
-                                    />
-                                    <div className='card-body'>
-                                        <h5 className='card-title'>
-                                            INALAMBRICO
-                                        </h5>
-                                        <p className='card-text'>
-                                            Para los que buscan la comodidas de
-                                            no tener que lidiar con el molesto
-                                            cable y y quieren sentirses
-                                            totalmente libre.
-                                        </p>
-                                    </div>
-                                    <div className='card-footer'>
-                                        <small className='text-muted'>
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </div>
-                                </div>
-                                <div className='card'>
-                                    <img
-                                        src='./assets/img/ratonbarato.jpg'
-                                        className='card-img-top'
-                                        alt='...'
-                                    />
-                                    <div className='card-body'>
-                                        <h5 className='card-title'>BARATO</h5>
-                                        <p className='card-text'>
-                                            Para los que no quieran gastar mucho
-                                            dinero en su perisferico pero sin
-                                            renunciar a la calidad y a
-                                            prestaciones de primera
-                                        </p>
-                                    </div>
-                                    <div className='card-footer'>
-                                        <small className='text-muted'>
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div className='col-md-10 m-auto'>
                             <h2 className='text-center'>Guía de Básica</h2>
@@ -166,11 +99,93 @@ export const Sec1 = () => {
                                 hace practicamente imperceptible
                             </p>
                         </div>
+                        <div className='col-md-8 m-auto mt-5 mitext'>
+                            <div className='card-group'>
+                                <div className='card'>
+                                    <img
+                                        src='./assets/img/ratongaming.jpg'
+                                        className='card-img-top'
+                                        alt='...'
+                                    />
+                                    <div className='card-body'>
+                                        <h5 className='card-title'>GAMING</h5>
+                                        <p className='card-text mitext'>
+                                            Para los jugadores más exigentes que
+                                            quieren sacar el maximo rendimiento
+                                            y obtener los mejores resultados en
+                                            sus partidas online
+                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <a
+                                            className='btn btn-dark'
+                                            href='/hola'
+                                        >
+                                            Ver más
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className='card'>
+                                    <img
+                                        src='./assets/img/ratoninalambrico.jpg'
+                                        className='card-img-top'
+                                        alt='...'
+                                    />
+                                    <div className='card-body'>
+                                        <h5 className='card-title'>
+                                            INALAMBRICO
+                                        </h5>
+                                        <p className='card-text mitext'>
+                                            Para los que buscan la comodidas de
+                                            no tener que lidiar con el molesto
+                                            cable y y quieren sentirses
+                                            totalmente libre.
+                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <a
+                                            className='btn btn-dark'
+                                            href='/hola'
+                                        >
+                                            Ver más
+                                        </a>
+                                    </div>
+                                </div>
+                                <div className='card'>
+                                    <img
+                                        src='./assets/img/ratonbarato.jpg'
+                                        className='card-img-top'
+                                        alt='...'
+                                    />
+                                    <div className='card-body'>
+                                        <h5 className='card-title'>BARATO</h5>
+                                        <p className='card-text mitext'>
+                                            Para los que no quieran gastar mucho
+                                            dinero en su perisferico pero sin
+                                            renunciar a la calidad y a
+                                            prestaciones de primera
+                                        </p>
+                                    </div>
+                                    <div className='card-footer'>
+                                        <a
+                                            className='btn btn-dark'
+                                            href='/hola'
+                                        >
+                                            Ver más
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <style jsx>
                 {`
+                    .mitext p {
+                        font-size: 0.9em;
+                        line-height: 1em;
+                    }
                     @media (max-width: 600px) {
                     }
 

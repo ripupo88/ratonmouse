@@ -147,7 +147,7 @@ export const Modelo = () => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-md-12'>
+                    <div className='col-md-12 pb-5'>
                         <h4>Valoraciones de los Clientes</h4>
                         <hr />
                         <div className='row'>
@@ -308,9 +308,44 @@ export const Modelo = () => {
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <div className='video-responsive'>
+                            <iframe
+                                src='https://www.youtube.com/embed/q_6tPGfFg5s'
+                                frameborder='0'
+                                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                    <span>
+                        Crédito del video{' '}
+                        <a
+                            target='_blank'
+                            href='https://www.youtube.com/channel/UCY577sQz6dgfcZOY19oIL6A'
+                        >
+                            UNBOXME
+                        </a>
+                    </span>
                 </div>
                 <style jsx>
                     {`
+                        .video-responsive {
+                            height: 0;
+                            overflow: hidden;
+                            padding-bottom: 56.25%;
+                            padding-top: 30px;
+                            position: relative;
+                        }
+                        .video-responsive iframe,
+                        .video-responsive object,
+                        .video-responsive embed {
+                            height: 100%;
+                            left: 0;
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                        }
                         .mispan {
                             font-size: 1.5em;
                         }

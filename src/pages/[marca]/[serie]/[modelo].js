@@ -6,13 +6,20 @@ export const Modelo = () => {
 
     return (
         <>
-            <div className='col-md-10 m-auto'>
-                <h1 className='text-center'>G502-Hero</h1>
+            <div className='col-xl-10 m-auto'>
+                <h1 className='text-center'>
+                    Logitech G502 Hero RGB 16000-DPI
+                </h1>
+                <hr />
                 <div className='row'>
-                    <div className='col-md-5'>
-                        <img src='/assets/img/ratongaming.jpg' />
+                    <div className='col-md-3'>
+                        <img
+                            className='img-fluid'
+                            src='/assets/img/ratongaming.jpg'
+                        />
                     </div>
-                    <div className='col-md-7 mt-4'>
+                    <div className='col-md-5 mt-4'>
+                        <h4>Características</h4>
                         <ul>
                             <li>
                                 <p>
@@ -49,29 +56,278 @@ export const Modelo = () => {
                                 </p>
                             </li>
                         </ul>
+                        <div className='bg-darkmio'>
+                            <div className='row'>
+                                <div className='col-md-5'>
+                                    <div className='myspacing'>
+                                        <span className='text-muted'>
+                                            Precio máximo
+                                            <br />
+                                            <small>(RECOMENDADO)</small>
+                                        </span>
+                                    </div>
+                                    <span className='numprecio'>
+                                        <b>65</b>
+                                    </span>
+                                    <span className='smallnum'>.50€</span>
+                                </div>
+                                <div className='col-md-7'>
+                                    <p className='text-muted'>
+                                        <small>
+                                            <img
+                                                width='15px'
+                                                src='/assets/svg/alert-circle.svg'
+                                            />{' '}
+                                            Esta es una recomendacion basada en
+                                            la comparacion de precios actuales
+                                            de diferentes tiendas, en base a las
+                                            valoraciones de los clientes y a los
+                                            detalles tecnicos y prestaciones del
+                                            equipo.
+                                        </small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-md-4 mt-4'>
+                        <table className='table table-striped table-hover'>
+                            <h4>Detalles técnicos</h4>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <b>Fabricante</b>
+                                    </td>
+                                    <td>Logitech</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Marca</b>
+                                    </td>
+                                    <td>Logitech G</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Serie</b>
+                                    </td>
+                                    <td>G502-Hero</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Sensor</b>
+                                    </td>
+                                    <td>16 000 DPI/PPP</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Botones</b>
+                                    </td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Peso</b>
+                                    </td>
+                                    <td>127g</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Conexión</b>
+                                    </td>
+                                    <td>Cable (1.8m)</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <b>Lar/Anch/Alt</b>
+                                    </td>
+                                    <td>13.2/7.5/3.5</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div className='row'>
-                    <div>
-                        <h3>Valoraciones de los Clientes</h3>
+                    <div className='col-md-12'>
+                        <h4>Valoraciones de los Clientes</h4>
                         <hr />
-                        <div className='col-md-3'>
-                            <h4>Amazon</h4>
-                            <p>4.5/5</p>
+                        <div className='row'>
+                            <div className='col-lg-3 m-auto'>
+                                <h4>Amazon</h4>
+                                <table className='table table-borderless'>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Valoracion</b>
+                                            </td>
+                                            <td>
+                                                <span className='mispan'>
+                                                    4.5/5 (152)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Top ventas</b>
+                                            </td>
+                                            <td>
+                                                <span className='mispan'>
+                                                    2
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className='col-lg-3 m-auto'>
+                                <h4>PCComponentes</h4>
+                                <table className='table table-borderless'>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Valoracion</b>
+                                            </td>
+                                            <td>
+                                                <span className='mispan'>
+                                                    9.2/10 (5)
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Ventas</b>
+                                            </td>
+                                            <td>
+                                                <span className='mispan'>
+                                                    Top 4{' '}
+                                                    <ion-icon name='arrow-up-outline'></ion-icon>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div className='col-lg-3 m-auto'>
+                                <h4>Media Markt</h4>
+                                <table className='table table-borderless'>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <b>Valoracion</b>
+                                            </td>
+                                            <span className='mispan'>
+                                                <td>4.4/5 (5)</td>
+                                            </span>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <b>Top ventas</b>
+                                            </td>
+                                            <td>
+                                                <span className='mispan'>
+                                                    6
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div className='col-md-3'>
-                            <h4>PcComponentes</h4>
-                            <p>9.2/10</p>
+                        <hr />
+                        <div className='row'>
+                            <div className='col-md-12'>
+                                <h4>Puntos positivos</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <b>Sensor Hero 16000 DPI</b>: La
+                                            presicion es máxima. equipado con el
+                                            Hero, este Logitech hace temblar el
+                                            mercado con un sensor optico de 16
+                                            mil PPP que es más que suficiente
+                                            para satisfacer hasta a los Gamers
+                                            más exigentes de la actualidad
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>11 Botones programables</b>: Con
+                                            una hubicacion muy comoda, que se
+                                            ajusta a practicamente cualquier
+                                            mano, además de ser totalmente
+                                            programables, los 11 botones de este
+                                            ratón gaming son una de sus
+                                            principales cualidades y una de las
+                                            que le hace destacar sobre la
+                                            competencia
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Relación Calidad-Precio</b>: Sin
+                                            duda su aspecto positivo más
+                                            llamativo. Con un precio que suele
+                                            rondar los 50 o 60 euros este G502
+                                            es la mejor opcion del mercado por
+                                            ese rango de precio. No es
+                                            casualidad que esté ubicado en los
+                                            ratones gaming más vendidos en las
+                                            principales tiendas online.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <b>Recomendado</b>: Este dispositivo
+                                            ha sido uno de los mas recomendados
+                                            durante todo el año 2020 y
+                                            seguramente seguirá dando de que
+                                            hablar en el 2021. Son varios los
+                                            sitios webs especialisados en el
+                                            tema que lo recomiendan como la
+                                            mejor opcion de la actualidad
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className='col-md-12'>
+                                <h4>Puntos negativos</h4>
+                                <ul>
+                                    <li>
+                                        <p>
+                                            <b>Nada que resaltar</b>: Apesar de
+                                            haber encontrado algunas reseñas
+                                            negativas, no hay nada que realmente
+                                            preocupe o se deba tomar en cuenta,
+                                            porque la gran cantidad de estos
+                                            dispositivos que se han vendido
+                                            siempre da lugar a que alguno pueda
+                                            fallar, pero de forma muy
+                                            exporadica.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div className='col-md-3'>
-                            <h4>MediaMarckt</h4>
-                            <p>4.4/5</p>
-                        </div>
-                        <div className='col-md-3'></div>
                     </div>
                 </div>
                 <style jsx>
                     {`
+                        .mispan {
+                            font-size: 1.5em;
+                        }
+                        .myspacing {
+                            line-height: 1em;
+                        }
+                        .bg-darkmio {
+                            line-height: 3em;
+                            background-color: #f1f5f9;
+                            padding: 10px;
+                        }
+                        .smallnum {
+                            font-size: 1.5em;
+                        }
+                        .numprecio {
+                            font-size: 4em;
+                        }
                         @media (max-width: 600px) {
                         }
 

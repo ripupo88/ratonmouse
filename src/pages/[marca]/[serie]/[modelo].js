@@ -148,88 +148,44 @@ export const Modelo = () => {
                 </div>
                 <div className='row'>
                     <div className='col-md-12 pb-5'>
-                        <h4>Valoraciones de los Clientes</h4>
+                        <h4>Comparador de precios</h4>
                         <hr />
                         <div className='row'>
                             <div className='col-lg-3 m-auto'>
-                                <h4>Amazon</h4>
-                                <table className='table table-borderless'>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <b>Valoracion</b>
-                                            </td>
-                                            <td>
-                                                <span className='mispan'>
-                                                    4.5/5 (152)
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <b>Top ventas</b>
-                                            </td>
-                                            <td>
-                                                <span className='mispan'>
-                                                    2
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div>
+                                    <h4>Amazon</h4>
+                                    <span className='numprecio'>
+                                        <b>52</b>
+                                    </span>
+                                    <span className='smallnum'>.99€</span>
+                                </div>
+                                <div className='btn btn-primary'>
+                                    Ir a la tienda
+                                </div>
                             </div>
                             <div className='col-lg-3 m-auto'>
-                                <h4>PCComponentes</h4>
-                                <table className='table table-borderless'>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <b>Valoracion</b>
-                                            </td>
-                                            <td>
-                                                <span className='mispan'>
-                                                    9.2/10 (5)
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <b>Ventas</b>
-                                            </td>
-                                            <td>
-                                                <span className='mispan'>
-                                                    Top 4{' '}
-                                                    <ion-icon name='arrow-up-outline'></ion-icon>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div>
+                                    <h4>PCComponentes</h4>
+                                    <span className='numprecio'>
+                                        <b>53</b>
+                                    </span>
+                                    <span className='smallnum'>.99€</span>
+                                </div>
+                                <div className='btn btn-primary'>
+                                    Ir a la tienda
+                                </div>
                             </div>
                             <div className='col-lg-3 m-auto'>
-                                <h4>Media Markt</h4>
-                                <table className='table table-borderless'>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <b>Valoracion</b>
-                                            </td>
-                                            <span className='mispan'>
-                                                <td>4.4/5 (5)</td>
-                                            </span>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <b>Top ventas</b>
-                                            </td>
-                                            <td>
-                                                <span className='mispan'>
-                                                    6
-                                                </span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div>
+                                    <h4>Media Markt</h4>
+                                    <span className='numprecio'>
+                                        <b>49</b>
+                                    </span>
+                                    <span className='smallnum'>.99€</span>
+                                </div>
+                                <div className='btn btn-primary'>
+                                    Ir a la tienda
+                                </div>
                             </div>
                         </div>
                         <hr />
@@ -312,9 +268,9 @@ export const Modelo = () => {
                         <div className='video-responsive'>
                             <iframe
                                 src='https://www.youtube.com/embed/q_6tPGfFg5s'
-                                frameborder='0'
+                                frameBorder='0'
                                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                                allowfullscreen
+                                allowFullScreen
                             ></iframe>
                         </div>
                     </div>

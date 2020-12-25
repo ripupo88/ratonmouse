@@ -1,60 +1,28 @@
 import { useRouter } from 'next/router';
 
-export const Modelo = () => {
+export default function Modelo({ data }) {
     const router = useRouter();
     const { marca, serie, modelo } = router.query;
 
     return (
         <>
             <div className='col-xl-10 m-auto'>
-                <h1 className='text-center'>
-                    Logitech G502 Hero RGB 16000-DPI
-                </h1>
+                <h1 className='text-center'>{data.title}</h1>
                 <hr />
                 <div className='row'>
-                    <div className='col-md-3'>
-                        <img
-                            className='img-fluid'
-                            src='/assets/img/ratongaming.jpg'
-                        />
+                    <div className='col-md-3 text-center'>
+                        <img className='img-fluid' src={data.imgurl} />
                     </div>
                     <div className='col-md-5 mt-4'>
                         <h4>Características</h4>
                         <ul>
-                            <li>
-                                <p>
-                                    Sensor Hero 16K: La generación de sensor
-                                    óptico HERO para ratón ofrece precisión
-                                    hasta 16 000 dpi sin suavizado, filtrado ni
-                                    aceleración
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    11 Botones Programables y Botón Rueda rápido
-                                    con Dos Modos: El ratón con cable para
-                                    gaming Logitech G permite personalizar tu
-                                    configuración para controlar totalmente el
-                                    juego
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Peso Personalizable: Ajusta el tacto y el
-                                    deslizamiento del ratón; G502 HERO incluye
-                                    cinco pesas de 3.6 g que se pueden usar en
-                                    diversas configuraciones de peso
-                                </p>
-                            </li>
-                            <li>
-                                <p>
-                                    Sistema Mecánico de Tensión de Botones: El
-                                    sistema mecánico de tensión de botones del
-                                    ratón con cable para gaming aumenta la
-                                    coherencia de respuesta de los botones
-                                    izquierdo y derecho
-                                </p>
-                            </li>
+                            {data.caracteristicas.map((item) => {
+                                return (
+                                    <li>
+                                        <p>{item}</p>
+                                    </li>
+                                );
+                            })}
                         </ul>
                         <div className='bg-darkmio'>
                             <div className='row'>
@@ -67,9 +35,17 @@ export const Modelo = () => {
                                         </span>
                                     </div>
                                     <span className='numprecio'>
-                                        <b>65</b>
+                                        <b>
+                                            {
+                                                data.preciorecomendado.split(
+                                                    '.'
+                                                )[0]
+                                            }
+                                        </b>
                                     </span>
-                                    <span className='smallnum'>.50€</span>
+                                    <span className='smallnum'>
+                                        .{data.preciorecomendado.split('.')[1]}€
+                                    </span>
                                 </div>
                                 <div className='col-md-7'>
                                     <p className='text-muted'>
@@ -98,49 +74,49 @@ export const Modelo = () => {
                                     <td>
                                         <b>Fabricante</b>
                                     </td>
-                                    <td>Logitech</td>
+                                    <td>{data.detalles.fabricante}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Marca</b>
                                     </td>
-                                    <td>Logitech G</td>
+                                    <td>{data.detalles.marca}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Serie</b>
                                     </td>
-                                    <td>G502-Hero</td>
+                                    <td>{data.detalles.serie}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Sensor</b>
                                     </td>
-                                    <td>16 000 DPI/PPP</td>
+                                    <td>{data.detalles.sensor}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Botones</b>
                                     </td>
-                                    <td>11</td>
+                                    <td>{data.detalles.botones}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Peso</b>
                                     </td>
-                                    <td>127g</td>
+                                    <td>{data.detalles.peso}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Conexión</b>
                                     </td>
-                                    <td>Cable (1.8m)</td>
+                                    <td>{data.detalles.conexion}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Lar/Anch/Alt</b>
                                     </td>
-                                    <td>13.2/7.5/3.5</td>
+                                    <td>{data.detalles.dimenciones}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -150,116 +126,61 @@ export const Modelo = () => {
                     <div className='col-md-12 pb-5'>
                         <h4>Comparador de precios</h4>
                         <hr />
-                        <div className='row'>
-                            <div className='col-lg-3 m-auto'>
-                                <div>
-                                    <h4>Amazon</h4>
-                                    <span className='numprecio'>
-                                        <b>52</b>
-                                    </span>
-                                    <span className='smallnum'>.99€</span>
-                                </div>
-                                <div className='btn btn-primary'>
-                                    Ir a la tienda
-                                </div>
-                            </div>
-                            <div className='col-lg-3 m-auto'>
-                                <div>
-                                    <h4>PCComponentes</h4>
-                                    <span className='numprecio'>
-                                        <b>53</b>
-                                    </span>
-                                    <span className='smallnum'>.99€</span>
-                                </div>
-                                <div className='btn btn-primary'>
-                                    Ir a la tienda
-                                </div>
-                            </div>
-                            <div className='col-lg-3 m-auto'>
-                                <div>
-                                    <h4>Media Markt</h4>
-                                    <span className='numprecio'>
-                                        <b>49</b>
-                                    </span>
-                                    <span className='smallnum'>.99€</span>
-                                </div>
-                                <div className='btn btn-primary'>
-                                    Ir a la tienda
-                                </div>
-                            </div>
+                        <div className='row myspacing2'>
+                            {data.comparador.map((item) => {
+                                return (
+                                    <div className='col-sm-3 col-6 m-auto'>
+                                        <div>
+                                            <h4>{item.nombre}</h4>
+                                            <span className='numprecio'>
+                                                <b>
+                                                    {item.precio.split('.')[0]}
+                                                </b>
+                                            </span>
+                                            <span className='smallnum'>
+                                                .{item.precio.split('.')[1]}€
+                                            </span>
+                                        </div>
+                                        <a
+                                            href={item.afiliado}
+                                            className='btn btn-primary'
+                                        >
+                                            Ir a la tienda
+                                        </a>
+                                    </div>
+                                );
+                            })}
                         </div>
                         <hr />
                         <div className='row'>
-                            <div className='col-md-12'>
+                            <div className='col-md-6'>
                                 <h4>Puntos positivos</h4>
                                 <ul>
-                                    <li>
-                                        <p>
-                                            <b>Sensor Hero 16000 DPI</b>: La
-                                            presicion es máxima. equipado con el
-                                            Hero, este Logitech hace temblar el
-                                            mercado con un sensor optico de 16
-                                            mil PPP que es más que suficiente
-                                            para satisfacer hasta a los Gamers
-                                            más exigentes de la actualidad
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <b>11 Botones programables</b>: Con
-                                            una hubicacion muy comoda, que se
-                                            ajusta a practicamente cualquier
-                                            mano, además de ser totalmente
-                                            programables, los 11 botones de este
-                                            ratón gaming son una de sus
-                                            principales cualidades y una de las
-                                            que le hace destacar sobre la
-                                            competencia
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <b>Relación Calidad-Precio</b>: Sin
-                                            duda su aspecto positivo más
-                                            llamativo. Con un precio que suele
-                                            rondar los 50 o 60 euros este G502
-                                            es la mejor opcion del mercado por
-                                            ese rango de precio. No es
-                                            casualidad que esté ubicado en los
-                                            ratones gaming más vendidos en las
-                                            principales tiendas online.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>
-                                            <b>Recomendado</b>: Este dispositivo
-                                            ha sido uno de los mas recomendados
-                                            durante todo el año 2020 y
-                                            seguramente seguirá dando de que
-                                            hablar en el 2021. Son varios los
-                                            sitios webs especialisados en el
-                                            tema que lo recomiendan como la
-                                            mejor opcion de la actualidad
-                                        </p>
-                                    </li>
+                                    {data.positivos.map((item) => {
+                                        return (
+                                            <li>
+                                                <p>
+                                                    <b>{item.split(':')[0]}</b>:
+                                                    {item.split(':')[1]}
+                                                </p>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
-                            <div className='col-md-12'>
+                            <div className='col-md-6'>
                                 <h4>Puntos negativos</h4>
                                 <ul>
-                                    <li>
-                                        <p>
-                                            <b>Nada que resaltar</b>: Apesar de
-                                            haber encontrado algunas reseñas
-                                            negativas, no hay nada que realmente
-                                            preocupe o se deba tomar en cuenta,
-                                            porque la gran cantidad de estos
-                                            dispositivos que se han vendido
-                                            siempre da lugar a que alguno pueda
-                                            fallar, pero de forma muy
-                                            exporadica.
-                                        </p>
-                                    </li>
+                                    {data.negativos.map((item) => {
+                                        return (
+                                            <li>
+                                                <p>
+                                                    <b>{item.split(':')[0]}</b>:
+                                                    {item.split(':')[1]}
+                                                </p>
+                                            </li>
+                                        );
+                                    })}
                                 </ul>
                             </div>
                         </div>
@@ -267,7 +188,7 @@ export const Modelo = () => {
                     <div>
                         <div className='video-responsive'>
                             <iframe
-                                src='https://www.youtube.com/embed/q_6tPGfFg5s'
+                                src={data.youtube.url}
                                 frameBorder='0'
                                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                                 allowFullScreen
@@ -275,17 +196,28 @@ export const Modelo = () => {
                         </div>
                     </div>
                     <span>
-                        Crédito del video{' '}
-                        <a
-                            target='_blank'
-                            href='https://www.youtube.com/channel/UCY577sQz6dgfcZOY19oIL6A'
-                        >
-                            UNBOXME
+                        Este vídeo pertenece a:{' '}
+                        <a target='_blank' href={data.youtube.credit}>
+                            {data.youtube.nombre}
                         </a>
                     </span>
                 </div>
                 <style jsx>
                     {`
+                         {
+                            /* .alto {
+                            max-height: 360px;
+                        } */
+                        }
+                        .myspacing2 div {
+                            text-align: center;
+                        }
+                        .myspacing2 span {
+                            color: #616569;
+                        }
+                        .myspacing2 {
+                            line-height: 2.4em;
+                        }
                         .video-responsive {
                             height: 0;
                             overflow: hidden;
@@ -330,6 +262,56 @@ export const Modelo = () => {
             </div>
         </>
     );
-};
+}
 
-export default Modelo;
+export async function getStaticPaths() {
+    let paths = [];
+    console.log('path');
+    const requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+    };
+    const data = await fetch(`http://localhost:3030/raton`, requestOptions)
+        .then((response) => response.text())
+        .then((result) => JSON.parse(result))
+        .catch((error) => console.log(error));
+
+    data.data.map((item) => {
+        console.log(item.detalles.marca);
+        paths.push({
+            params: {
+                marca: item.datalles.marca.replace(/[\. ,:-]+/g, '-'),
+                serie: item.datalles.serie.replace(/[\. ,:-]+/g, '-'),
+                modelo: item.datalles.modelo.replace(/[\. ,:-]+/g, '-'),
+            },
+        });
+    });
+    console.log('Pathsaquiiiiiiii', paths);
+    return {
+        paths,
+        fallback: true,
+    };
+}
+
+export async function getStaticProps({ params }) {
+    let notFound = true;
+    const requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+    };
+    const data = await fetch(
+        `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
+        requestOptions
+    )
+        .then((response) => response.text())
+        .then((result) => JSON.parse(result).data[0])
+        .catch((error) => console.log(error));
+    if (!!data.title) {
+        notFound = false;
+    }
+    return {
+        props: { data },
+        revalidate: 10,
+        notFound,
+    };
+}

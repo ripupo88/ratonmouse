@@ -20,16 +20,16 @@ export const Sec1 = () => {
                                 En esta web tenemos una misión, recomendarte
                                 siempre la mejor opción que tienes en el mercado
                                 para adquirir un ratón que de ajuste a tus
-                                necesidades, que cumpla los requerimientos que
-                                exiges, que sea de buena calidad y al mejor
-                                precio posible. Esto lo conseguimos, visitando
-                                cada blog, cada página de venta, cada sitio web
-                                en internet en el que se hable, se valore o se
-                                haga una review de algún ratón. Recopilamos toda
-                                la información posible, testeamos los que más
-                                nos llamen la atención y leemos las valoraciones
-                                de miles de clientes que ya lo hayan comprado y
-                                han contado su experiencia.{' '}
+                                necesidades, que cumpla tus exigencias, que sea
+                                de buena calidad y al mejor precio posible. Esto
+                                lo conseguimos, visitando cada blog, cada página
+                                de venta, cada sitio web en internet en el que
+                                se hable, se valore o se haga una review de
+                                algún ratón. Recopilamos toda la información
+                                posible, testeamos los que más nos llamen la
+                                atención y leemos las valoraciones de miles de
+                                clientes que ya lo hayan comprado y han contado
+                                su experiencia.{' '}
                             </p>
                         </div>
                         <div className='col-md-10 m-auto'>

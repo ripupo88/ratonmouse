@@ -266,23 +266,26 @@ export default function Modelo({ data }) {
 
 export async function getStaticPaths() {
     let paths = [];
-    console.log('path');
     const requestOptions = {
         method: 'GET',
         redirect: 'follow',
     };
-    const data = await fetch(`http://localhost:3030/raton`, requestOptions)
+    const datamia = await fetch(`http://localhost:3030/raton`, requestOptions)
         .then((response) => response.text())
         .then((result) => JSON.parse(result))
         .catch((error) => console.log(error));
 
-    data.data.map((item) => {
+    datamia.data.map((item, key) => {
         console.log(item.detalles.marca);
+        console.log(key);
+        const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
+        const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
+        const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
         paths.push({
             params: {
-                marca: item.datalles.marca.replace(/[\. ,:-]+/g, '-'),
-                serie: item.datalles.serie.replace(/[\. ,:-]+/g, '-'),
-                modelo: item.datalles.modelo.replace(/[\. ,:-]+/g, '-'),
+                marca,
+                serie,
+                modelo,
             },
         });
     });

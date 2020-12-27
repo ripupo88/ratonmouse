@@ -28,7 +28,7 @@ export const Navbar = () => {
                             <a
                                 className='nav-link active'
                                 aria-current='page'
-                                href='#'
+                                href='/'
                             >
                                 Home
                             </a>
@@ -39,8 +39,13 @@ export const Navbar = () => {
                             </a>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>
-                                Precios
+                            <a className='nav-link' href='/productos'>
+                                Productos
+                            </a>
+                        </li>
+                        <li className='nav-item'>
+                            <a className='nav-link' href='/comparador'>
+                                Comparador
                             </a>
                         </li>
                         <li className='nav-item dropdown'>
@@ -52,7 +57,7 @@ export const Navbar = () => {
                                 data-bs-toggle='dropdown'
                                 aria-expanded='false'
                             >
-                                Gaming
+                                Articulos
                             </a>
                             <ul
                                 className='dropdown-menu'
@@ -60,17 +65,17 @@ export const Navbar = () => {
                             >
                                 <li>
                                     <a className='dropdown-item' href='#'>
-                                        Action
+                                        Top 10
                                     </a>
                                 </li>
                                 <li>
                                     <a className='dropdown-item' href='#'>
-                                        Another action
+                                        Por precio
                                     </a>
                                 </li>
                                 <li>
                                     <a className='dropdown-item' href='#'>
-                                        Something else here
+                                        Recomendaciones
                                     </a>
                                 </li>
                             </ul>

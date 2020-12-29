@@ -6,35 +6,6 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
-h1 {
-    font-size: 50px;
-    margin-top: 1em;
-}
-h2 {
-    font-size: 45px;
-    margin-top: 1em;
-}
-
-h3 {
-    font-size: 35px;
-    margin-top: 1em;
-    text-align: left;
-}
-
-p {
-    font-size: 1.1em;
-    color: #26263adc;
-    line-height: 1.3em;
-}
 
 @media (max-width: 900px) {
-    h1 {
-        font-size: 40px;
-    }
-    h2 {
-        font-size: 30px;
-    }
-    p {
-        font-size: 20px;
-    }
 }

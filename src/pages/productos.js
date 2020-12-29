@@ -3,7 +3,7 @@ import React from 'react';
 export default function Productos({ data }) {
     console.log(data);
     return (
-        <div className='shadow-sm page bgblue'>
+        <div className='shadow-sm page bgblue mt-3'>
             <h1 className='text-center'>Catálogo</h1>
             <div className='row m-0 p-0 pb-5'>
                 <div className='cajatexto col-xl-8 m-auto ml-md-4'>
@@ -24,17 +24,22 @@ export default function Productos({ data }) {
                                     <p>{item.caracteristicas[0]}</p>
                                 </div>
                                 <div className='col-2 btnc-flex'>
-                                    <a
-                                        className='btn btn-dark'
-                                        href={`/${
-                                            item.detalles.marca
-                                        }/${item.detalles.serie.replace(
-                                            /[\. ,:-]+/g,
-                                            '-'
-                                        )}/${item.detalles.modelo}`}
-                                    >
-                                        Ver más
-                                    </a>
+                                    <div>
+                                        <span className='price'>
+                                            {item.comparador[0].precio}
+                                        </span>
+                                        <a
+                                            className='btn btn-dark'
+                                            href={`/${
+                                                item.detalles.marca
+                                            }/${item.detalles.serie.replace(
+                                                /[\. ,:-]+/g,
+                                                '-'
+                                            )}/${item.detalles.modelo}`}
+                                        >
+                                            Ver más
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         );
@@ -44,6 +49,13 @@ export default function Productos({ data }) {
             </div>
             <style jsx>
                 {`
+                    .price ::after {
+                        font-size: 0.7em;
+                        content: '€';
+                    }
+                    .price {
+                        font-size: 1.8rem;
+                    }
                     .btnc-flex {
                         display: flex;
                         justify-content: center;

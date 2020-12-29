@@ -6,7 +6,7 @@ export default function Modelo({ data }) {
 
     return (
         <>
-            <div className='col-xl-10 m-auto'>
+            <div className='col-xl-10 m-auto mt-3'>
                 <h1 className='text-center'>{data.title}</h1>
                 <hr />
                 <div className='row'>
@@ -241,9 +241,9 @@ export default function Modelo({ data }) {
                             line-height: 1em;
                         }
                         .bg-darkmio {
-                            line-height: 3em;
                             background-color: #f1f5f9;
                             padding: 10px;
+                            font-size: 0.85rem;
                         }
                         .smallnum {
                             font-size: 1.5em;

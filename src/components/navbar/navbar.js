@@ -1,9 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import './navbar.module.css';
 
 export const Navbar = () => {
+    const router = useRouter();
     return (
-        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+        <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
             <div className='container-fluid'>
                 <a className='navbar-brand' href='#'>
                     Ratón Mouse
@@ -25,28 +28,54 @@ export const Navbar = () => {
                 >
                     <ul className='navbar-nav navmio'>
                         <li className='nav-item'>
-                            <a
-                                className='nav-link active'
-                                aria-current='page'
-                                href='/'
-                            >
-                                Home
-                            </a>
+                            <Link className='active' href='/'>
+                                <a
+                                    className={`nav-link ${
+                                        router.pathname == '/' ? 'active' : ''
+                                    }`}
+                                >
+                                    Home
+                                </a>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='#'>
-                                Marcas
-                            </a>
+                            <Link href='/marcas'>
+                                <a
+                                    className={`nav-link ${
+                                        router.pathname == '/marcas'
+                                            ? 'active'
+                                            : ''
+                                    }`}
+                                >
+                                    Marcas
+                                </a>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='/productos'>
-                                Productos
-                            </a>
+                            <Link href='/productos'>
+                                <a
+                                    className={`nav-link ${
+                                        router.pathname == '/productos'
+                                            ? 'active'
+                                            : ''
+                                    }`}
+                                >
+                                    Productos
+                                </a>
+                            </Link>
                         </li>
                         <li className='nav-item'>
-                            <a className='nav-link' href='/comparador'>
-                                Comparador
-                            </a>
+                            <Link href='/comparador'>
+                                <a
+                                    className={`nav-link ${
+                                        router.pathname == '/comparador'
+                                            ? 'active'
+                                            : ''
+                                    }`}
+                                >
+                                    Comparador
+                                </a>
+                            </Link>
                         </li>
                         <li className='nav-item dropdown'>
                             <a

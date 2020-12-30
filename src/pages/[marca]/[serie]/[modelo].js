@@ -1,22 +1,19 @@
-import { useRouter } from 'next/router';
-
-export default function Modelo({ data }) {
-    const router = useRouter();
-    const { marca, serie, modelo } = router.query;
-
+export default function Modelo({ dat }) {
+    const data = dat;
+    console.log('datas', data);
     return (
-        <>
+        <div>
             <div className='col-xl-10 m-auto mt-3'>
-                <h1 className='text-center'>{data.title}</h1>
+                <h1 className='text-center'>{data?.title}</h1>
                 <hr />
                 <div className='row'>
                     <div className='col-md-3 text-center'>
-                        <img className='img-fluid' src={data.imgurl} />
+                        <img className='img-fluid' src={data?.imgurl} />
                     </div>
                     <div className='col-md-5 mt-4'>
                         <h4>Características</h4>
                         <ul>
-                            {data.caracteristicas.map((item) => {
+                            {data?.caracteristicas.map((item) => {
                                 return (
                                     <li>
                                         <p>{item}</p>
@@ -37,14 +34,15 @@ export default function Modelo({ data }) {
                                     <span className='numprecio'>
                                         <b>
                                             {
-                                                data.preciorecomendado.split(
+                                                data?.preciorecomendado.split(
                                                     '.'
                                                 )[0]
                                             }
                                         </b>
                                     </span>
                                     <span className='smallnum'>
-                                        .{data.preciorecomendado.split('.')[1]}€
+                                        .{data?.preciorecomendado.split('.')[1]}
+                                        €
                                     </span>
                                 </div>
                                 <div className='col-md-7'>
@@ -74,49 +72,49 @@ export default function Modelo({ data }) {
                                     <td>
                                         <b>Fabricante</b>
                                     </td>
-                                    <td>{data.detalles.fabricante}</td>
+                                    <td>{data?.detalles.fabricante}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Marca</b>
                                     </td>
-                                    <td>{data.detalles.marca}</td>
+                                    <td>{data?.detalles.marca}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Serie</b>
                                     </td>
-                                    <td>{data.detalles.serie}</td>
+                                    <td>{data?.detalles.serie}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Sensor</b>
                                     </td>
-                                    <td>{data.detalles.sensor}</td>
+                                    <td>{data?.detalles.sensor}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Botones</b>
                                     </td>
-                                    <td>{data.detalles.botones}</td>
+                                    <td>{data?.detalles.botones}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Peso</b>
                                     </td>
-                                    <td>{data.detalles.peso}</td>
+                                    <td>{data?.detalles.peso}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Conexión</b>
                                     </td>
-                                    <td>{data.detalles.conexion}</td>
+                                    <td>{data?.detalles.conexion}</td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <b>Lar/Anch/Alt</b>
                                     </td>
-                                    <td>{data.detalles.dimenciones}</td>
+                                    <td>{data?.detalles.dimenciones}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -127,7 +125,7 @@ export default function Modelo({ data }) {
                         <h4>Comparador de precios</h4>
                         <hr />
                         <div className='row myspacing2'>
-                            {data.comparador.map((item) => {
+                            {data?.comparador.map((item) => {
                                 return (
                                     <div className='col-sm-3 col-6 m-auto'>
                                         <div>
@@ -156,7 +154,7 @@ export default function Modelo({ data }) {
                             <div className='col-md-6'>
                                 <h4>Puntos positivos</h4>
                                 <ul>
-                                    {data.positivos.map((item) => {
+                                    {data?.positivos.map((item) => {
                                         return (
                                             <li>
                                                 <p>
@@ -171,7 +169,7 @@ export default function Modelo({ data }) {
                             <div className='col-md-6'>
                                 <h4>Puntos negativos</h4>
                                 <ul>
-                                    {data.negativos.map((item) => {
+                                    {data?.negativos.map((item) => {
                                         return (
                                             <li>
                                                 <p>
@@ -188,7 +186,7 @@ export default function Modelo({ data }) {
                     <div>
                         <div className='video-responsive'>
                             <iframe
-                                src={data.youtube.url}
+                                src={data?.youtube.url}
                                 frameBorder='0'
                                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                                 allowFullScreen
@@ -197,8 +195,8 @@ export default function Modelo({ data }) {
                     </div>
                     <span>
                         Este vídeo pertenece a:{' '}
-                        <a target='_blank' href={data.youtube.credit}>
-                            {data.youtube.nombre}
+                        <a target='_blank' href={data?.youtube.credit}>
+                            {data?.youtube.nombre}
                         </a>
                     </span>
                 </div>
@@ -260,7 +258,7 @@ export default function Modelo({ data }) {
                     `}
                 </style>
             </div>
-        </>
+        </div>
     );
 }
 
@@ -270,14 +268,10 @@ export async function getStaticPaths() {
         method: 'GET',
         redirect: 'follow',
     };
-    const datamia = await fetch(`http://localhost:3030/raton`, requestOptions)
-        .then((response) => response.text())
-        .then((result) => JSON.parse(result))
-        .catch((error) => console.log(error));
+    const res = await fetch(`http://localhost:3030/raton`, requestOptions);
+    const datamia = await res.json();
 
-    datamia.data.map((item, key) => {
-        console.log(item.detalles.marca);
-        console.log(key);
+    datamia.data?.map((item, key) => {
         const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
         const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
         const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
@@ -289,7 +283,7 @@ export async function getStaticPaths() {
             },
         });
     });
-    console.log('Pathsaquiiiiiiii', paths);
+
     return {
         paths,
         fallback: true,
@@ -297,24 +291,28 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-    let notFound = true;
     const requestOptions = {
         method: 'GET',
         redirect: 'follow',
     };
-    const data = await fetch(
+    const res = await fetch(
         `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
         requestOptions
-    )
-        .then((response) => response.text())
-        .then((result) => JSON.parse(result).data[0])
-        .catch((error) => console.log(error));
-    if (!!data.title) {
-        notFound = false;
-    }
+    );
+    const data = await res.json();
+    const dat = data.data[0];
+
+    await sleep(5);
     return {
-        props: { data },
+        props: { dat },
         revalidate: 10,
-        notFound,
     };
+}
+
+async function sleep(seconds, logTimer = true) {
+    let ms = seconds * 1000;
+    if (logTimer) {
+        console.log('Sleeping ' + seconds + ' seconds');
+    }
+    return new Promise((resolve) => setTimeout(resolve, ms));
 }

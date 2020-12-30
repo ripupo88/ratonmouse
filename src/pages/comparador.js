@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function Productos({ data }) {
-    console.log(data);
     return (
         <div className='shadow-sm page bgblue'>
             <h1 className='text-center'>Comparador</h1>

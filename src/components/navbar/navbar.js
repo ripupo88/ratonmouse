@@ -77,37 +77,18 @@ export const Navbar = () => {
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-item dropdown'>
-                            <a
-                                className='nav-link dropdown-toggle'
-                                href='#'
-                                id='navbarDropdownMenuLink'
-                                role='button'
-                                data-bs-toggle='dropdown'
-                                aria-expanded='false'
-                            >
-                                Articulos
-                            </a>
-                            <ul
-                                className='dropdown-menu'
-                                aria-labelledby='navbarDropdownMenuLink'
-                            >
-                                <li>
-                                    <a className='dropdown-item' href='#'>
-                                        Top 10
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className='dropdown-item' href='#'>
-                                        Por precio
-                                    </a>
-                                </li>
-                                <li>
-                                    <a className='dropdown-item' href='#'>
-                                        Recomendaciones
-                                    </a>
-                                </li>
-                            </ul>
+                        <li className='nav-item'>
+                            <Link href='/articulos'>
+                                <a
+                                    className={`nav-link ${
+                                        router.pathname == '/articulos'
+                                            ? 'active'
+                                            : ''
+                                    }`}
+                                >
+                                    Artículos
+                                </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

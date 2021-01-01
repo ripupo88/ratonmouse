@@ -16,7 +16,9 @@ export default function Modelo({ dat }) {
                             {data?.caracteristicas.map((item) => {
                                 return (
                                     <li>
-                                        <p>{item}</p>
+                                        <p>
+                                            <small>{item}</small>
+                                        </p>
                                     </li>
                                 );
                             })}

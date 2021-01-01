@@ -33,17 +33,18 @@ function MyApp({ Component, pageProps }) {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <div className='container-fluid m-0 p-0'>
+            <Navbar />
+            <div className='container-mio m-auto m-0 p-0'>
                 <CookieConsent buttonText='aceptar'>
-                    Esta web usa cookies
+                    Esta web usa usa cookies tecnicas impresindibles para el
+                    funcionamiento del sitio
                 </CookieConsent>
                 <div className=''>
-                    <Navbar />
                     <Component {...pageProps} />
-                    <Footer />
                 </div>
             </div>
-            <script
+            <Footer />
+            {/* <script
                 src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js'
                 integrity='sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU'
                 crossOrigin='anonymous'
@@ -52,7 +53,7 @@ function MyApp({ Component, pageProps }) {
                 src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js'
                 integrity='sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj'
                 crossOrigin='anonymous'
-            ></script>
+            ></script> */}
         </html>
     );
 }

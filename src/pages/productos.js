@@ -13,6 +13,8 @@ export default function Productos({ data }) {
                                 <div className='col-1'>
                                     <div>
                                         <img
+                                            height='122'
+                                            width='80'
                                             className='img-fluid'
                                             src={item.imgurl}
                                         />
@@ -24,9 +26,11 @@ export default function Productos({ data }) {
                                 </div>
                                 <div className='col-2 btnc-flex'>
                                     <div>
-                                        <span className='price'>
-                                            {item.comparador[0].precio}
-                                        </span>
+                                        <div>
+                                            <span className='price'>
+                                                {item.comparador[0].precio}
+                                            </span>
+                                        </div>
                                         <a
                                             className='btn btn-dark'
                                             href={`/${
@@ -48,6 +52,10 @@ export default function Productos({ data }) {
             </div>
             <style jsx>
                 {`
+                    img {
+                        max-height: 122px;
+                        width: auto;
+                    }
                     .price ::after {
                         font-size: 0.7em;
                         content: '€';

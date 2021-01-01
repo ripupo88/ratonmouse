@@ -94,8 +94,8 @@ export default function Productos({ data0, data1 }) {
             <style jsx>
                 {`
                     .img {
-                        max-width: 80%;
-                        height: auto;
+                        width: auto;
+                        max-height: 400px;
                     }
                     .flex-right {
                         display: flex;

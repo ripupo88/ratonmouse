@@ -55,12 +55,27 @@ body {
     /* calc(0.6em + 0.7vw) */
     font-weight: 360;
     line-height: 1.5;
-    color: #41414e;
+    color: #666666;
     background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent;
 }
-
+.indice a {
+    text-decoration: none;
+}
+.indice a:hover {
+    text-decoration: underline;
+}
+.indice {
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #ddddff;
+    padding: 1em;
+}
+.active {
+    border: solid 1px;
+    font-weight: 500;
+}
 .lead-mio {
     font-size: calc(0.65rem + 0.7vw);
     /* calc(0.6em + 0.7vw) */
@@ -77,6 +92,16 @@ body {
 
 [tabindex='-1']:focus:not(:focus-visible) {
     outline: 0 !important;
+}
+
+.price {
+    color: #ff6600;
+    display: block;
+    font-size: 1.875rem;
+    font-weight: 700;
+    letter-spacing: -0.0625rem;
+    line-height: 1;
+    white-space: nowrap;
 }
 hr {
     margin: 1rem 0;
@@ -137,6 +162,12 @@ a {
 }
 a:hover {
     color: #0a58ca;
+}
+.price-prefix {
+    color: #787878;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: normal;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {

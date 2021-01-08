@@ -1,9 +1,10 @@
 import React from 'react';
+import { Card } from '../components/card/Card';
 
 export default function Productos({ data }) {
     return (
-        <div className='shadow-sm page bgblue mt-3'>
-            <h1 className='text-center'>Catálogo</h1>
+        <div className='page bgblue mt-3 col-md-10 m-auto'>
+            {/* <h1 className='text-center'>Catálogo</h1>
             <div className='row m-0 p-0 pb-5'>
                 <div className='cajatexto col-xl-8 m-auto ml-md-4'>
                     {data.data.map((item) => {
@@ -50,6 +51,7 @@ export default function Productos({ data }) {
                     <hr />
                 </div>
             </div>
+
             <style jsx>
                 {`
                     img {
@@ -71,7 +73,7 @@ export default function Productos({ data }) {
                     @media (max-width: 600px) {
                     }
                 `}
-            </style>
+            </style> */}
         </div>
     );
 }

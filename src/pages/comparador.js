@@ -3,7 +3,7 @@ import React from 'react';
 export default function Productos({ data0, data1 }) {
     return (
         <div className='shadow-sm page bgblue'>
-            <h1 className='text-center'>Comparador</h1>
+            {/* <h1 className='text-center'>Comparador</h1>
             <div className='row m-0 p-0 pb-5'>
                 <div className='d-none d-sm-none d-md-flex col-md-3 flex-right'>
                     <img
@@ -110,7 +110,7 @@ export default function Productos({ data0, data1 }) {
                     @media (max-width: 600px) {
                     }
                 `}
-            </style>
+            </style> */}
         </div>
     );
 }

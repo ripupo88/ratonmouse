@@ -6,9 +6,9 @@ import './navbar.module.css';
 export const Navbar = () => {
     const router = useRouter();
     return (
-        <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+        <nav className='navbar navbar-expand-lg navbar-light bg-light'>
             <div className='container-fluid'>
-                <a className='navbar-brand' href='#'>
+                <a className='navbar-brand' href='/'>
                     Ratón Mouse
                 </a>
                 <button
@@ -38,7 +38,7 @@ export const Navbar = () => {
                                 </a>
                             </Link>
                         </li>
-                        <li className='nav-item'>
+                        {/* <li className='nav-item'>
                             <Link href='/marcas'>
                                 <a
                                     className={`nav-link ${
@@ -50,8 +50,8 @@ export const Navbar = () => {
                                     Marcas
                                 </a>
                             </Link>
-                        </li>
-                        <li className='nav-item'>
+                        </li> */}
+                        {/* <li className='nav-item'>
                             <Link href='/productos'>
                                 <a
                                     className={`nav-link ${
@@ -76,17 +76,17 @@ export const Navbar = () => {
                                     Comparador
                                 </a>
                             </Link>
-                        </li>
+                        </li> */}
                         <li className='nav-item'>
-                            <Link href='/articulos'>
+                            <Link href='/articulo/mejores-ratones-gaming-baratos'>
                                 <a
                                     className={`nav-link ${
-                                        router.pathname == '/articulos'
+                                        router.pathname == '/articulo'
                                             ? 'active'
                                             : ''
                                     }`}
                                 >
-                                    Artículos
+                                    Artículo
                                 </a>
                             </Link>
                         </li>
@@ -95,6 +95,13 @@ export const Navbar = () => {
             </div>
             <style jsx>
                 {`
+                    .mi-bg-dark a {
+                        color: white;
+                        font-weight: 400;
+                    }
+                    .mi-bg-dark {
+                        background-color: #002ffa;
+                    }
                     .navmio {
                         width: 100%;
                         justify-content: center;

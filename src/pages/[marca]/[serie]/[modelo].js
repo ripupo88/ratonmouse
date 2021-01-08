@@ -1,10 +1,10 @@
-export default function Modelo({ dat }) {
-    const data = dat;
-    console.log('datas', data);
+export default function Modelo() {
+    // const data = dat;
+
     return (
         <div>
             <div className='col-xl-10 m-auto mt-3'>
-                <h1 className='text-center'>{data?.title}</h1>
+                {/* <h1 className='text-center'>{data?.title}</h1>
                 <hr />
                 <div className='row'>
                     <div className='col-md-3 text-center'>
@@ -201,15 +201,11 @@ export default function Modelo({ dat }) {
                             {data?.youtube.nombre}
                         </a>
                     </span>
-                </div>
+                </div> */}
                 <style jsx>
                     {`
                          {
-                            /* .alto {
-                            max-height: 360px;
-                        } */
-                        }
-                        .myspacing2 div {
+                            /* .myspacing2 div {
                             text-align: center;
                         }
                         .myspacing2 span {
@@ -256,6 +252,7 @@ export default function Modelo({ dat }) {
 
                         p {
                             font-size: 0.9em;
+                        } */
                         }
                     `}
                 </style>
@@ -264,57 +261,48 @@ export default function Modelo({ dat }) {
     );
 }
 
-export async function getStaticPaths() {
-    let paths = [];
-    const requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    };
-    const res = await fetch(`http://localhost:3030/raton`, requestOptions);
-    const datamia = await res.json();
+// export async function getStaticPaths() {
+//     let paths = [];
+//     const requestOptions = {
+//         method: 'GET',
+//         redirect: 'follow',
+//     };
+//     const res = await fetch(`http://localhost:3030/raton`, requestOptions);
+//     const datamia = await res.json();
 
-    datamia.data?.map((item, key) => {
-        const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
-        const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
-        const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
-        paths.push({
-            params: {
-                marca,
-                serie,
-                modelo,
-            },
-        });
-    });
+//     datamia.data?.map((item, key) => {
+//         const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
+//         const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
+//         const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
+//         paths.push({
+//             params: {
+//                 marca,
+//                 serie,
+//                 modelo,
+//             },
+//         });
+//     });
 
-    return {
-        paths,
-        fallback: true,
-    };
-}
+//     return {
+//         paths,
+//         fallback: true,
+//     };
+// }
 
-export async function getStaticProps({ params }) {
-    const requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    };
-    const res = await fetch(
-        `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
-        requestOptions
-    );
-    const data = await res.json();
-    const dat = data.data[0];
+// export async function getStaticProps({ params }) {
+//     const requestOptions = {
+//         method: 'GET',
+//         redirect: 'follow',
+//     };
+//     const res = await fetch(
+//         `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
+//         requestOptions
+//     );
+//     const data = await res.json();
+//     const dat = data.data[0];
 
-    await sleep(5);
-    return {
-        props: { dat },
-        revalidate: 10,
-    };
-}
-
-async function sleep(seconds, logTimer = true) {
-    let ms = seconds * 1000;
-    if (logTimer) {
-        console.log('Sleeping ' + seconds + ' seconds');
-    }
-    return new Promise((resolve) => setTimeout(resolve, ms));
-}
+//     return {
+//         props: { dat },
+//         revalidate: 10,
+//     };
+// }

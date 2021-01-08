@@ -2,11 +2,11 @@ import React from 'react';
 
 export const Sec1 = () => {
     return (
-        <div className='shadow-sm page bgblue fondo-mio'>
+        <div className='page bgblue fondo-mio'>
             <div className='row m-0 p-0 pb-5'>
-                <div className='cajatexto col-md-12 ml-md-4'>
+                <div className='cajatexto col-xl-8 col-md-10 ml-md-4 m-auto'>
                     <div className='row'>
-                        <div className='col-md-10 m-auto '>
+                        <div className='col-md-12 m-auto '>
                             <h1 className='text-center m-5'>Ratones Gaming</h1>
                             <p className='lead-mio'>
                                 La seleccion de un buen raton gaming para que
@@ -246,12 +246,6 @@ export const Sec1 = () => {
                         background: url('./assets/svg/fondoazul.svg');
                         background-repeat: no-repeat;
                         background-size: cover;
-                    }
-                    .indice {
-                        border: 1px solid;
-                        border-radius: 10px;
-                        background-color: #ddddff;
-                        padding: 1em;
                     }
                     img {
                         width: 100%;

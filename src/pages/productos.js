@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from '../components/card/Card';
 
-export default function Productos({ data }) {
+export default function Productos() {
     return (
         <div className='page bgblue mt-3 col-md-10 m-auto'>
             {/* <h1 className='text-center'>Catálogo</h1>
@@ -78,18 +78,18 @@ export default function Productos({ data }) {
     );
 }
 
-export async function getStaticProps() {
-    const requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    };
-    const data = await fetch(`http://localhost:3030/raton`, requestOptions)
-        .then((response) => response.text())
-        .then((result) => JSON.parse(result))
-        .catch((error) => console.log(error));
+// export async function getStaticProps() {
+//     const requestOptions = {
+//         method: 'GET',
+//         redirect: 'follow',
+//     };
+//     const data = await fetch(`http://localhost:3030/raton`, requestOptions)
+//         .then((response) => response.text())
+//         .then((result) => JSON.parse(result))
+//         .catch((error) => console.log(error));
 
-    return {
-        props: { data },
-        revalidate: 10,
-    };
-}
+//     return {
+//         props: { data },
+//         revalidate: 10,
+//     };
+// }

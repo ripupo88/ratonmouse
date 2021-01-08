@@ -115,21 +115,21 @@ export default function Productos({ data0, data1 }) {
     );
 }
 
-export async function getStaticProps() {
-    const requestOptions = {
-        method: 'GET',
-        redirect: 'follow',
-    };
-    let data = await fetch(`http://localhost:3030/raton`, requestOptions)
-        .then((response) => response.text())
-        .then((result) => JSON.parse(result))
-        .catch((error) => console.log(error));
+// export async function getStaticProps() {
+//     const requestOptions = {
+//         method: 'GET',
+//         redirect: 'follow',
+//     };
+//     let data = await fetch(`http://localhost:3030/raton`, requestOptions)
+//         .then((response) => response.text())
+//         .then((result) => JSON.parse(result))
+//         .catch((error) => console.log(error));
 
-    const data0 = data.data[0];
-    const data1 = data.data[1];
+//     const data0 = data.data[0];
+//     const data1 = data.data[1];
 
-    return {
-        props: { data0, data1 },
-        revalidate: 10,
-    };
-}
+//     return {
+//         props: { data0, data1 },
+//         revalidate: 10,
+//     };
+// }

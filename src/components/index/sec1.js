@@ -191,57 +191,69 @@ export const Sec1 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='sec3'>
-                        <div className='row p-sm-4'>
-                            <div className='col-sm-4'>
-                                <div className='card-body'>
-                                    <div className='h3 card-title'>
-                                        Mejores ratones gaming baratos
-                                    </div>
-                                    <p className='card-text mitext'>
-                                        La mejor compra será, cuando existe un
-                                        equilibrio calidad-precio. En esta
-                                        página te orientamos para que hagas la
-                                        mejor elección y así seas un buen
-                                        gamer...
-                                    </p>
-                                    <a className='btn btn-light' href='/hola'>
-                                        Ver más
-                                    </a>
+                    <div className='sec3 nopadding'>
+                        <div className='row nopadding mitext'>
+                            <div className='col-sm-4 fondo1 p-md-5'>
+                                <div className='h5 card-title'>
+                                    Mejores ratones gaming baratos
                                 </div>
+                                <p className='card-text mitext'>
+                                    La mejor compra será, cuando existe un
+                                    equilibrio calidad-precio. En esta página te
+                                    orientamos para que hagas la mejor elección
+                                    y así seas un buen gamer...
+                                </p>
+                                <a className='btn btn-light' href='/hola'>
+                                    Ver más
+                                </a>
                             </div>
 
-                            <div className='col-sm-4'>
-                                <div className='card-body'>
-                                    <h5 className='card-title'>INALAMBRICO</h5>
-                                    <p className='card-text mitext'>
-                                        Para los que buscan{' '}
-                                        <strong>la comodida</strong> de no tener
-                                        que lidiar con el molesto cable y y
-                                        quieren sentirses totalmente libre.
-                                    </p>
-                                    <a className='btn btn-light' href='/hola'>
-                                        Ver más
-                                    </a>
-                                </div>
+                            <div className='col-sm-4 fondo2 p-md-5'>
+                                <h5 className='card-title'>INALAMBRICO</h5>
+                                <p className='card-text mitext'>
+                                    Para los que buscan{' '}
+                                    <strong>la comodida</strong> de no tener que
+                                    lidiar con el molesto cable y y quieren
+                                    sentirses totalmente libre.
+                                </p>
+                                <a className='btn btn-light' href='/hola'>
+                                    Ver más
+                                </a>
                             </div>
-                            <div className='col-sm-4'>
-                                <div className='card-body'>
-                                    <h5 className='card-title'>BARATO</h5>
-                                    <p className='card-text mitext'>
-                                        Para los que no quieran gastar mucho
-                                        dinero en su perisferico pero
-                                        <strong>
-                                            {' '}
-                                            sin renunciar a la calidad
-                                        </strong>{' '}
-                                        y a prestaciones de primera
-                                    </p>
-                                    <a className='btn btn-light' href='/hola'>
-                                        Ver más
-                                    </a>
-                                </div>
+                            <div className='col-sm-4 fondo3 p-md-5'>
+                                <h5 className='card-title'>BARATO</h5>
+                                <p className='card-text '>
+                                    Para los que no quieran gastar mucho dinero
+                                    en su perisferico pero
+                                    <strong>
+                                        {' '}
+                                        sin renunciar a la calidad
+                                    </strong>{' '}
+                                    y a prestaciones de primera
+                                </p>
+                                <a className='btn btn-light' href='/hola'>
+                                    Ver más
+                                </a>
                             </div>
+                        </div>
+                    </div>
+                    <div className='pt-5 miflex'>
+                        <div className='row'>
+                            <h2 className='m-auto'>
+                                Mejores marcas de ratones
+                            </h2>
+                            <div className='col-sm-3'>
+                                <img src='./assets/img/logitech.png' />{' '}
+                            </div>
+                            <div className='col-sm-3 pl-5 pr-5'>
+                                {' '}
+                                <img src='./assets/img/razer.png' />{' '}
+                            </div>
+                            <div className='col-sm-3'>
+                                {' '}
+                                <img src='./assets/img/corsair.png' />
+                            </div>
+                            <div className='col-sm-3'>LOGITECH</div>
                         </div>
                     </div>
                     <div className='indice col-sm-6 ml-auto mt-5'>
@@ -280,6 +292,19 @@ export const Sec1 = () => {
             </div>
             <style jsx>
                 {`
+                    .nopadding {
+                        padding: 0 !important;
+                        margin: 0 !important;
+                    }
+                    .fondo1 {
+                        background-color: #000000;
+                    }
+                    .fondo2 {
+                        background-color: #151515;
+                    }
+                    .fondo3 {
+                        background-color: #080808;
+                    }
                     .card {
                         background-color: #f2b705;
                     }
@@ -289,7 +314,6 @@ export const Sec1 = () => {
                         color: #2a2a2a;
                     }
                     .sec3 {
-                        padding: 1em 1em 4em 1em;
                         background-color: #141259;
                         color: #eaeaea;
                     }
@@ -299,6 +323,7 @@ export const Sec1 = () => {
                         background: url('./assets/img/headerratongaming.webp');
                         background-repeat: no-repeat;
                         background-size: cover;
+                        background-position: right;
                     }
                     .fondo-mio {
                         background: url('./assets/svg/fondoazul.svg');
@@ -308,6 +333,9 @@ export const Sec1 = () => {
                     img {
                         width: 100%;
                         height: auto;
+                    }
+                    .mitext > div {
+                        min-height: 200px;
                     }
                     .mitext p {
                         font-size: 0.9em;

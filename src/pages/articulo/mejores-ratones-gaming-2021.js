@@ -259,50 +259,50 @@ export default function Articulo(props) {
     );
 }
 
-export async function getStaticPaths() {
-    // let paths = [];
-    // const requestOptions = {
-    //     method: 'GET',
-    //     redirect: 'follow',
-    // };
-    // const res = await fetch(`http://localhost:3030/raton`, requestOptions);
-    // const datamia = await res.json();
+// export async function getStaticPaths() {
+//     // let paths = [];
+//     // const requestOptions = {
+//     //     method: 'GET',
+//     //     redirect: 'follow',
+//     // };
+//     // const res = await fetch(`http://localhost:3030/raton`, requestOptions);
+//     // const datamia = await res.json();
 
-    // datamia.data?.map((item, key) => {
-    //     const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
-    //     const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
-    //     const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
-    //     paths.push({
-    //         params: {
-    //             marca,
-    //             art: 'Mejores ratones gaming baratos',
-    //         },
-    //     });
-    // });
+//     // datamia.data?.map((item, key) => {
+//     //     const marca = item.detalles.marca.replace(/[\. ,:-]+/g, '-');
+//     //     const serie = item.detalles.serie.replace(/[\. ,:-]+/g, '-');
+//     //     const modelo = item.detalles.modelo.replace(/[\. ,:-]+/g, '-');
+//     //     paths.push({
+//     //         params: {
+//     //             marca,
+//     //             art: 'Mejores ratones gaming baratos',
+//     //         },
+//     //     });
+//     // });
 
-    return {
-        paths: [
-            {
-                params: {
-                    art: 'Mejores-ratones-gaming-baratos',
-                },
-            },
-        ],
-        fallback: true,
-    };
-}
+//     return {
+//         paths: [
+//             {
+//                 params: {
+//                     art: 'Mejores-ratones-gaming-baratos',
+//                 },
+//             },
+//         ],
+//         fallback: true,
+//     };
+// }
 
-export async function getStaticProps({ params }) {
-    // const requestOptions = {
-    //     method: 'GET',
-    //     redirect: 'follow',
-    // };
-    // const res = await fetch(
-    //     `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
-    //     requestOptions
-    // );
-    // const data = await res.json();
-    // const dat = data.data[0];
+// export async function getStaticProps({ params }) {
+//     // const requestOptions = {
+//     //     method: 'GET',
+//     //     redirect: 'follow',
+//     // };
+//     // const res = await fetch(
+//     //     `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
+//     //     requestOptions
+//     // );
+//     // const data = await res.json();
+//     // const dat = data.data[0];
 
-    return { props: { a: '' } };
-}
+//     return { props: { a: '' } };
+// }

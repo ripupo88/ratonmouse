@@ -167,7 +167,7 @@ export const Sec1 = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className='row mt-5'>
+                            <div className='row mt-5 mb-5'>
                                 <div className='col-md-8 m-auto m-auto'>
                                     <h4>Conectividad:</h4>
                                     <p>
@@ -193,9 +193,11 @@ export const Sec1 = () => {
                     </div>
                     <div className='sec3 nopadding'>
                         <div className='row nopadding mitext'>
-                            <div className='col-sm-4 fondo1 p-md-5'>
-                                <div className='h5 card-title'>
-                                    Mejores ratones gaming baratos
+                            <div className='col-sm-4 fondo1 p-5'>
+                                <div className='h3 card-title'>
+                                    <a href='#'>
+                                        Mejores ratones gaming baratos del 2021
+                                    </a>
                                 </div>
                                 <p className='card-text mitext'>
                                     La mejor compra será, cuando existe un
@@ -203,25 +205,28 @@ export const Sec1 = () => {
                                     orientamos para que hagas la mejor elección
                                     y así seas un buen gamer...
                                 </p>
-                                <a className='btn btn-light' href='/hola'>
-                                    Ver más
-                                </a>
                             </div>
 
-                            <div className='col-sm-4 fondo2 p-md-5'>
-                                <h5 className='card-title'>INALAMBRICO</h5>
+                            <div className='col-sm-4 fondo2 p-5'>
+                                <div className='h3 card-title'>
+                                    <a href='#'>
+                                        Ratón inalámbrico, explicación y
+                                        recomendaciones
+                                    </a>
+                                </div>
                                 <p className='card-text mitext'>
                                     Para los que buscan{' '}
                                     <strong>la comodida</strong> de no tener que
                                     lidiar con el molesto cable y y quieren
                                     sentirses totalmente libre.
                                 </p>
-                                <a className='btn btn-light' href='/hola'>
-                                    Ver más
-                                </a>
                             </div>
-                            <div className='col-sm-4 fondo3 p-md-5'>
-                                <h5 className='card-title'>BARATO</h5>
+                            <div className='col-sm-4 fondo3 p-5'>
+                                <div className='h3 card-title'>
+                                    <a href='#'>
+                                        Ratones gaming con sensor Laser
+                                    </a>
+                                </div>
                                 <p className='card-text '>
                                     Para los que no quieran gastar mucho dinero
                                     en su perisferico pero
@@ -231,32 +236,81 @@ export const Sec1 = () => {
                                     </strong>{' '}
                                     y a prestaciones de primera
                                 </p>
-                                <a className='btn btn-light' href='/hola'>
-                                    Ver más
-                                </a>
                             </div>
                         </div>
                     </div>
                     <div className='pt-5 miflex'>
-                        <div className='row'>
-                            <h2 className='m-auto'>
-                                Mejores marcas de ratones
-                            </h2>
-                            <div className='col-sm-3'>
-                                <img src='./assets/img/logitech.png' />{' '}
+                        <div className='row m-auto'>
+                            <div className='miflex'>
+                                <h2>Principales marcas de ratones</h2>
                             </div>
-                            <div className='col-sm-3 pl-5 pr-5'>
-                                {' '}
-                                <img src='./assets/img/razer.png' />{' '}
+                            <div className='miflex'>
+                                <div className='col-sm-2 p-5'>
+                                    <img
+                                        title='Logitech'
+                                        alt='logotipo marca logitech'
+                                        src='./assets/img/logitech.png'
+                                    />{' '}
+                                </div>
+                                <div className='col-sm-2 p-5'>
+                                    {' '}
+                                    <img
+                                        title='Razer'
+                                        alt='logotipo marca Razer'
+                                        src='./assets/img/razer.png'
+                                    />{' '}
+                                </div>
+                                <div className='col-sm-2 p-2'>
+                                    {' '}
+                                    <img
+                                        title='Corsair'
+                                        alt='logotipo marca Corsair'
+                                        src='./assets/img/corsair.png'
+                                    />
+                                </div>
+                                <div className='col-sm-2'>
+                                    <img
+                                        title='Mars Gaming'
+                                        alt='logotipo marca Marz Gaming'
+                                        src='./assets/img/mars.png'
+                                    />
+                                </div>
                             </div>
-                            <div className='col-sm-3'>
-                                {' '}
-                                <img src='./assets/img/corsair.png' />
+                            <div className='miflex'>
+                                <div className='col-sm-2 p-5'>
+                                    <img
+                                        title='Steelseries'
+                                        alt='logotipo marca Steelseries'
+                                        src='./assets/img/steelseries.png'
+                                    />{' '}
+                                </div>
+                                <div className='col-sm-2 p-5'>
+                                    {' '}
+                                    <img
+                                        title='Asuz ROG'
+                                        alt='logotipo marca Asuz ROG'
+                                        src='./assets/img/asuz.png'
+                                    />{' '}
+                                </div>
+                                <div className='col-sm-2 p-2'>
+                                    {' '}
+                                    <img
+                                        title='Zowie'
+                                        alt='logotipo marca Zowie'
+                                        src='./assets/img/sowie.png'
+                                    />
+                                </div>
+                                <div className='col-sm-2 p-2'>
+                                    <img
+                                        title='Cooler Master'
+                                        alt='logotipo marca Cooler Master'
+                                        src='./assets/img/cooler.png'
+                                    />
+                                </div>
                             </div>
-                            <div className='col-sm-3'>LOGITECH</div>
                         </div>
                     </div>
-                    <div className='indice col-sm-6 ml-auto mt-5'>
+                    {/* <div className='indice col-sm-6 ml-auto mt-5'>
                         <div className='h5'>
                             Top 5 recomendados por RatonMouse
                         </div>
@@ -287,7 +341,7 @@ export const Sec1 = () => {
                                 </a>
                             </li>
                         </ol>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             <style jsx>
@@ -336,10 +390,20 @@ export const Sec1 = () => {
                     }
                     .mitext > div {
                         min-height: 200px;
+                        color: #c8c8c8
+                    }
+                    .mitext a{
+                        text-decoration: none;
+                        color: #e8e8e8;
+                    }
+                    .mitext a:hover{
+                        text-decoration: none;
+                        color: #b8b8e8;
                     }
                     .mitext p {
+                        color: #484848
                         font-size: 0.9em;
-                        line-height: 1em;
+                        line-height: 1.3em;
                     }
                     @media (max-width: 600px) {
                     }

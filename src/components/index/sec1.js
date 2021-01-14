@@ -13,6 +13,7 @@ export const Sec1 = () => {
                     name='Description'
                     content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar.'
                 />
+                <link rel='canonical' href='https://ratonmouse.com/' />
             </Head>
             <div className='headerimg'>
                 <div className='row'>
@@ -20,20 +21,22 @@ export const Sec1 = () => {
                     <div className='col-md-4'>
                         <h1 className='text-center m-5'>Ratones Gaming</h1>
                         <p className='lead-mio'>
-                            La selección de un buen ratón gaming para que nos
-                            acompañe en nuestros juegos es una tarea dificil.
-                            Nosotros te lo ponemos fácil.
+                            La selección de un buen ratón gaming, para que nos
+                            acompañe en nuestros juegos, es una tarea difícil.
+                            En esta página te lo ponemos fácil, para potenciar
+                            su uso con el mejor rendimiento posible.
                         </p>
                         <p className='lead-mio'>
-                            Hemos seleccionados los{' '}
+                            Para ello, hemos seleccionado los{' '}
                             <strong>mejores ratones gaming</strong> del 2020 y
-                            que siguen en el top en este 2021 para que puedas
-                            hacer la mejor elección
+                            que siguen en el top de ventas en 2021 para que
+                            puedas elegir, entre una gran variedad, el que más
+                            se ajuste a tu gusto.
                         </p>
                         <p className='lead-mio'>
-                            Tampoco queremos que sigas ciegamente nuestra
+                            El objetivo, no es que esta sea tu única guía de
                             recomendación, queremos que aprendas los conceptos
-                            más importantes para que entiendas el por qué un
+                            más importantes, para que entiendas el por qué un
                             ratón es mejor que otro.
                         </p>
                     </div>
@@ -47,27 +50,30 @@ export const Sec1 = () => {
                         <p>
                             El Ratón, ese periférico tan importante a la hora de
                             jugar y sobre todo de{' '}
-                            <strong>competir en línea</strong>, pero que muchas
-                            veces infravaloramos. Como norma general cuando
-                            vamos a comprar, escogemos el más bonito o el más
-                            barato, sin tener en cuenta ninguno de los otros
-                            muchos aspectos que pueden tener una influencia
-                            directa en nuestra{' '}
+                            <strong>competir en línea</strong>, y que, sin
+                            embargo, muchas veces infravaloramos. Como norma
+                            general cuando vamos a comprar, nos decantamos por
+                            el más bonito o el más barato, sin tener en cuenta
+                            otros muchos aspectos, que pueden tener una
+                            influencia directa en nuestra{' '}
                             <strong>experiencia de juego</strong>.
                         </p>
                         <p>
                             Aspectos como el sensor, el peso, los DPI, la
                             conectividad, la ergonomía o el número de botones y
                             si son programables o no, los solemos pasar por
-                            alto. Para que no vuelvas a cometer ese error te
-                            vamos a guiar en tu elección del mejor ratón gaming.
+                            alto. Desarrollar una comparativa que te servirá de
+                            guía para definir con claridad{' '}
+                            <strong>cuál es el mejor ratón gaming</strong>, es
+                            el objetivo.
                         </p>
                         <p>
-                            Si estás pensando comprar un mouse gamer o buscas{' '}
-                            <strong>información útil</strong> sobre estos
-                            periféricos, has llegado al lugar correcto, aquí
-                            aprenderemos sobre cada uno de los aspectos que
-                            deberíamos conocer antes de adquirir uno.
+                            Si estás pensando{' '}
+                            <strong>comprar un mouse gamer</strong> o buscas
+                            información útil sobre estos periféricos, sin duda
+                            has llegado al sitio correcto. Aquí abordaremos
+                            temas sobre cada uno de los aspectos, que deberías
+                            tener en cuenta antes de adquirir uno.
                         </p>
                     </div>
                     <div className='col-xl-2 col-md-4 col-6 m-auto order-md-first'>
@@ -102,59 +108,55 @@ export const Sec1 = () => {
                                     <div className='col-md-8 m-auto'>
                                         <h3>DPI:</h3>
                                         <p>
-                                            El término DPI proviene del inglés y
-                                            se asigna a las siglas Dots Per
-                                            Inch, puntos por pulgada (o píxeles
-                                            por pulgada).{' '}
+                                            El término Dots Per Inch proviene
+                                            del inglés y se asigna a las siglas
+                                            DPI, (puntos o píxeles por pulgada)
+                                            en español.{' '}
                                             <strong>
                                                 EL DPI es la cantidad de píxeles
-                                                que se mueve el puntero de tu
-                                                ratón
+                                                que recorre el puntero
                                             </strong>{' '}
-                                            dependiendo de las pulgadas, es
-                                            decir, son los pixeles que recorrerá
-                                            el cursor al desplazar el ratón una
-                                            pulgada.
+                                            en la pantalla, por cada pulgada que
+                                            se desplaza el ratón, es decir, son
+                                            los pixeles que recorrerá el cursor
+                                            al mover el ratón por pulgada.
                                         </p>
                                         <p>
                                             Saber cuántos DPI puede alcanzar
-                                            nuestro ratón es muy importante en
-                                            estos días que los monitores no
-                                            paran de crecer y de agregar cada
-                                            vez más pixeles, pero más que nada
-                                            es{' '}
+                                            nuestro ratón es muy importante, ya
+                                            que en la actualidad los monitores
+                                            varían el tamaño constantemente y
+                                            agregan cada vez más pixeles. Es
                                             <strong>
                                                 importante para los gamers
-                                            </strong>
-                                            , porque su rendimiento puede verse
-                                            totalmente afectado o mejorado
-                                            dependiendo de los DPI de su
-                                            periférico
+                                            </strong>{' '}
+                                            conocer su rendimiento, debido a que
+                                            puede verse totalmente afectado o
+                                            mejorado dependiendo de los DPI de
+                                            su periférico.
                                         </p>
                                         <p>
                                             El sensor es una parte importante
-                                            del ratón, los{' '}
-                                            <strong>
-                                                tenemos ópticos y laser
-                                            </strong>
-                                            . El nivel de precisión y la
-                                            superficie donde puede o no
-                                            funcionar varia uno del otro.
-                                            Nosotros normalmente elegimos los
-                                            ópticos, pero más que el sensor que
-                                            tenga nuestro mouse, nos interesa
-                                            los DPI. Si tu ratón no tiene los
-                                            suficientes tendrás que alzar la
-                                            mano muchas veces y terminarás de
-                                            jugar realmente exhausto.{' '}
+                                            del ratón, existen{' '}
+                                            <strong>ópticos y laser</strong>. El
+                                            nivel de precisión y la superficie
+                                            donde puede o no funcionar varia uno
+                                            del otro. Nosotros normalmente
+                                            elegimos los ópticos, pero más que
+                                            el sensor que tenga nuestro mouse
+                                            nos interesa los DPI. Si tu ratón no
+                                            tiene los suficientes, tendrás que
+                                            desplazar la mano muchas veces y
+                                            terminarás de jugar realmente
+                                            exhausto.
                                         </p>
                                     </div>
                                 </div>
-                                <div className='col-md-5 m-auto'>
+                                <div className='col-md-5 m-auto p-0'>
                                     <img
                                         alt='Mouse gaming DPI'
-                                        src='/assets/img/mouse-gaming-dpi.webp'
-                                    ></img>
+                                        src='/assets/img/mouse-gaming-dpi-2.webp'
+                                    />
                                 </div>
                             </div>
                             <div className='row nopadding mt-5'>
@@ -174,10 +176,9 @@ export const Sec1 = () => {
                                             se busca la comodidad y lo ligero
                                             que sea el dispositivo puede ayudar
                                             en eso. Algunos jugadores también
-                                            optan por los más ligeros
+                                            optan por los más ligeros.
                                         </p>
                                         <p>
-                                            {' '}
                                             La otra cara de la moneda son los
                                             GAMERS, para quienes el peso se
                                             convierte en aliado a la hora de
@@ -194,12 +195,13 @@ export const Sec1 = () => {
                                             muchos DPI con un peso ligero el
                                             ratón se va a volver casi
                                             incontrolable. Por suerte muchos
-                                            ratones gaming vienen con un{' '}
+                                            ratones gaming vienen con un
                                             <strong>
+                                                {' '}
                                                 sistema de ajuste de peso
                                             </strong>{' '}
                                             para que lo puedas regular a tu
-                                            gusto
+                                            gusto.
                                         </p>
                                     </div>
                                 </div>
@@ -216,7 +218,7 @@ export const Sec1 = () => {
                                         <h3>Botones:</h3>
                                         <p>
                                             El número de botones al igual que
-                                            los otros aspectos agrega comodidad
+                                            los otros aspectos, agrega comodidad
                                             para todo tipo de tareas. Puedes
                                             tener un atajo para copiar y pegar o
                                             para navegar por tus aplicaciones.
@@ -229,21 +231,23 @@ export const Sec1 = () => {
                                                 están pensados para juegos que
                                                 los requieren
                                             </strong>
-                                            . Por ejemplo, Juegos donde
+                                            . Por ejemplo, juegos donde
                                             necesitas realizar una serie de
-                                            acciones en corto tiempo.{' '}
+                                            acciones en corto plazo tiempo.
                                         </p>
                                         <p>
-                                            Aquí es hay que detenerse a pensar
-                                            el uso que le vas a dar al ratón,
-                                            para poder elegir uno con los
-                                            botones suficientes. Normalmente
-                                            estos vienen con un software para{' '}
+                                            Después de lo expuesto, es el
+                                            momento de saber con claridad el uso
+                                            que le vas a dar al ratón, para
+                                            poder elegir uno con los botones
+                                            suficientes. Normalmente estos
+                                            vienen con un software para
                                             <strong>
                                                 programar la función de cada
-                                                boton
+                                                botón
                                             </strong>{' '}
-                                            a tu gusto.
+                                            y de esta forma el ratón queda
+                                            personalizado.
                                         </p>
                                     </div>
                                 </div>
@@ -257,11 +261,11 @@ export const Sec1 = () => {
                                             comodidad, el hecho que{' '}
                                             <strong>
                                                 nuestra mano ajuste
-                                                perfectamente
+                                                perfectamente en el ratón
                                             </strong>{' '}
-                                            en el ratón y cada botón quede al
-                                            alcance de nuestros dedos es crucial
-                                            para disfrutar de una experiencia
+                                            y cada botón quede al alcance de
+                                            nuestros dedos es crucial para
+                                            disfrutar de una experiencia
                                             agradable.
                                         </p>
                                         <p>
@@ -271,10 +275,10 @@ export const Sec1 = () => {
                                             </strong>{' '}
                                             vas a tener que optar por un modelo
                                             u otro. Dentro de este grupo de
-                                            ratones ergonómicos entran lo
+                                            ratones ergonómicos entran los
                                             verticales, estos pueden resultar
-                                            cómodos para algunas personas pero
-                                            pocas veces se usan para jugar.{' '}
+                                            cómodos para algunas personas, pero
+                                            pocas veces se usan para jugar.
                                         </p>
                                         <p>
                                             Lamentablemente este aspecto solo lo
@@ -288,7 +292,7 @@ export const Sec1 = () => {
                                             </strong>
                                             , te recomendamos que busques un
                                             ratón que sea{' '}
-                                            <strong>cómodo</strong>.
+                                            <strong>cómodo</strong> para ti.
                                         </p>
                                     </div>
                                 </div>
@@ -306,30 +310,27 @@ export const Sec1 = () => {
                                         <p>
                                             En este aspecto tenemos 2 opciones,
                                             <strong>
-                                                {' '}
                                                 "cableado" o "inalámbrico"
                                             </strong>
                                             . Depende del gusto y la necesidad,
                                             pero solemos recomendar los
                                             cableados siempre que sea posible,
-                                            aunque en los últimos tiempos han
-                                            llegado al mercado dispositivos
-                                            inalámbricos que, en cuanto a
-                                            rendimiento, la diferencia se hace
-                                            prácticamente imperceptible
+                                            aunque con el avance de la
+                                            tecnología han llegado al mercado
+                                            dispositivos inalámbricos que, en
+                                            cuanto a rendimiento, la diferencia
+                                            se hace prácticamente imperceptible.
                                         </p>
                                         <p>
-                                            En el ámbito de los inalámbricos se
-                                            pueden encontrar 2 tipos de
-                                            conexiones inalámbricas que
-                                            predominan,{' '}
+                                            En el ámbito de los inalámbricos, se
+                                            pueden encontrar dos tipos de
+                                            conexiones que predominan, La
                                             <strong>
-                                                La bluetooth y la inalámbrica
-                                                común
+                                                bluetooth y la inalámbrica común
                                             </strong>
                                             . Ambas tienen sus ventajas,
                                             nosotros recomendamos la común
-                                            porque está mas enfocada a la
+                                            porque está más enfocada a la
                                             eficiencia, que es siempre lo que
                                             buscamos los gamers para poder
                                             competir a gran nivel.
@@ -340,15 +341,17 @@ export const Sec1 = () => {
                                             <strong>
                                                 tiempos de respuesta
                                             </strong>{' '}
-                                            suelen rondar los mínimos actuales,
-                                            además de olvidarnos por completo de
-                                            las pilas o las baterías, que
-                                            siempre nos suelen dar problemas
-                                            cuando de inalámbrico se trata. Otro
-                                            punto importante es que han mejorado
-                                            mucho el material de fabricación,
-                                            los cables trenzados actuales son
-                                            muy duraderos
+                                            suelen rondar en los mínimos
+                                            actuales, además de olvidarnos por
+                                            completo de las pilas o las
+                                            baterías, que de manera inoportuna
+                                            nos suelen dar problemas cuando de
+                                            inalámbrico se trata. Otro punto
+                                            importante es que han mejorado mucho
+                                            el material de fabricación, los
+                                            cables trenzados actuales son muy
+                                            duraderos y también más largos para
+                                            una mayor movilidad.
                                         </p>
                                     </div>
                                 </div>

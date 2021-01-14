@@ -6,12 +6,11 @@ export const Sec1 = () => {
         <div className='page bgblue '>
             <Head>
                 <title>
-                    Ratón gaming | Todos lo que necesitas saber sobre estos
-                    Periféricos
+                    Ratones gaming | Todos lo que necesitas saber sobre ellos.
                 </title>
                 <meta
                     name='Description'
-                    content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar.'
+                    content='Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para ti.'
                 />
                 <link rel='canonical' href='https://ratonmouse.com/' />
             </Head>

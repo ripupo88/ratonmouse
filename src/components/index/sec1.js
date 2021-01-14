@@ -1,8 +1,16 @@
 import React from 'react';
+import Head from 'next/head';
 
 export const Sec1 = () => {
     return (
         <div className='page bgblue '>
+            <Head>
+                <title>Te aaayudamos</title>
+                <meta
+                    name='Description'
+                    content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar y poderte hacerte la recomendacion que necesitas'
+                />
+            </Head>
             <div className='headerimg'>
                 <div className='row'>
                     <div className='col-md-2'></div>
@@ -30,12 +38,9 @@ export const Sec1 = () => {
             </div>
             <div className='sec2'>
                 <div className='row'>
-                    <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                        <img src='/assets/svg/comprar.svg'></img>
-                    </div>
-
                     <div className='col-md-6 m-auto'>
                         <h2>A la hora de comprar mi ratón</h2>
+                        <br />
                         <p>
                             El Ratón, ese periférico tan importante a la hora de
                             jugar y sobre todo de{' '}
@@ -62,12 +67,26 @@ export const Sec1 = () => {
                             deberíamos conocer antes de adquirir uno.
                         </p>
                     </div>
+                    <div className='col-xl-2 col-md-4 col-6 m-auto order-md-first'>
+                        <img
+                            width='322.984'
+                            height='250.531'
+                            alt='informacion sobre ratones gaming'
+                            className='p-sm-5 m-5 m-auto'
+                            src='/assets/svg/comprar.svg'
+                        />
+                        <div className='miflex mt-5'>
+                            <a className='mibtn' href='#' role='button'>
+                                APRENDER MÁS
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div className='fondo-mio'>
-                <div className='m-0 p-0 pb-5 row'>
-                    <div className='cajatexto col-xl-8 col-md-10 ml-md-4 m-auto'>
-                        <div className='col-md-12 m-auto mt-5'>
+            <div className='nopadding'>
+                <div className='m-0 p-0 pb-5 nopadding'>
+                    <div className='cajatexto  ml-md-4 m-auto nopadding'>
+                        <div className='m-auto'>
                             <h2 className='text-center'>
                                 Guía de compra (básica)
                             </h2>
@@ -75,236 +94,454 @@ export const Sec1 = () => {
                                 Aspectos importantes para tener en cuenta a la
                                 hora de comprar un ratón gaming
                             </div>
-                            <div className='row mt-5'>
-                                <div className='col-md-8 m-auto'>
-                                    <h4>DPI:</h4>
-                                    <p>
-                                        El término DPI proviene del inglés y se
-                                        asigna a las siglas Dots Per Inch,
-                                        puntos por pulgada (o píxeles por
-                                        pulgada).{' '}
-                                        <strong>
-                                            EL DPI es la cantidad de píxeles que
-                                            se mueve el puntero de tu ratón
-                                        </strong>{' '}
-                                        dependiendo de las pulgadas, es decir,
-                                        son los pixeles que recorrerá el cursor
-                                        al desplazar el ratón una pulgada. Saber
-                                        cuántos DPI puede alcanzar nuestro ratón
-                                        es muy importante en estos días que los
-                                        monitores no paran de crecer y de
-                                        agregar cada vez más pixeles, pero más
-                                        que nada es importante para los GAMERS,
-                                        porque su rendimiento puede verse
-                                        totalmente afectado o mejorado
-                                        dependiendo de los DPI de su periférico
-                                    </p>
+                            <div className='row nopadding mt-5'>
+                                <div className='col-md-7 m-auto row'>
+                                    <div className='col-md-8 m-auto'>
+                                        <h3>DPI:</h3>
+                                        <p>
+                                            El término DPI proviene del inglés y
+                                            se asigna a las siglas Dots Per
+                                            Inch, puntos por pulgada (o píxeles
+                                            por pulgada).{' '}
+                                            <strong>
+                                                EL DPI es la cantidad de píxeles
+                                                que se mueve el puntero de tu
+                                                ratón
+                                            </strong>{' '}
+                                            dependiendo de las pulgadas, es
+                                            decir, son los pixeles que recorrerá
+                                            el cursor al desplazar el ratón una
+                                            pulgada.
+                                        </p>
+                                        <p>
+                                            Saber cuántos DPI puede alcanzar
+                                            nuestro ratón es muy importante en
+                                            estos días que los monitores no
+                                            paran de crecer y de agregar cada
+                                            vez más pixeles, pero más que nada
+                                            es{' '}
+                                            <strong>
+                                                importante para los gamers
+                                            </strong>
+                                            , porque su rendimiento puede verse
+                                            totalmente afectado o mejorado
+                                            dependiendo de los DPI de su
+                                            periférico
+                                        </p>
+                                        <p>
+                                            El sensor es una parte importante
+                                            del ratón, los{' '}
+                                            <strong>
+                                                tenemos ópticos y laser
+                                            </strong>
+                                            . El nivel de precisión y la
+                                            superficie donde puede o no
+                                            funcionar varia uno del otro.
+                                            Nosotros normalmente elegimos los
+                                            ópticos, pero más que el sensor que
+                                            tenga nuestro mouse, nos interesa
+                                            los DPI. Si tu ratón no tiene los
+                                            suficientes tendrás que alzar la
+                                            mano muchas veces y terminarás de
+                                            jugar realmente exhausto.{' '}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                                    <img src='/assets/svg/target.svg'></img>
-                                </div>
-                            </div>
-                            <div className='row mt-5 '>
-                                <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                                    <img src='/assets/svg/fitness.svg'></img>
-                                </div>
-                                <div className='col-md-8 m-auto'>
-                                    <h4>Peso:</h4>
-                                    <p>
-                                        El peso que debes elegir depende mucho
-                                        del uso que le quieras dar. Para un uso
-                                        doméstico o de oficina se busca la
-                                        comodidad y lo ligero que sea el
-                                        dispositivo puede ayudar en eso. La otra
-                                        cara de la moneda son los GAMERS, para
-                                        quienes el peso se convierte en aliado a
-                                        la hora de tener{' '}
-                                        <strong>
-                                            máxima precisión, sobre todo en
-                                            juegos
-                                        </strong>{' '}
-                                        que requieran movimientos tanto rápidos
-                                        como precisos.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='row mt-5'>
-                                <div className='col-md-8 m-auto'>
-                                    <h4>Botones:</h4>
-                                    <p>
-                                        El número de botones al igual que los
-                                        otros aspectos agrega comodidad para
-                                        todo tipo de tareas. Puedes tener un
-                                        atajo para copiar y pegar o para navegar
-                                        por tus aplicaciones, pero sin duda
-                                        alguna quienes sacan mayor provecho de
-                                        esta prestación son nuevamente los
-                                        GAMERS sobre todo de juegos MMO.
-                                    </p>
-                                </div>
-                                <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                                    <img src='/assets/svg/calculator.svg'></img>
+                                <div className='col-md-5 m-auto'>
+                                    <img
+                                        alt='Mouse gaming DPI'
+                                        src='/assets/img/mouse-gaming-dpi.webp'
+                                    ></img>
                                 </div>
                             </div>
-                            <div className='row mt-5'>
-                                <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                                    <img src='/assets/svg/relaxing.svg'></img>
+                            <div className='row nopadding mt-5'>
+                                <div className='col-md-5 m-auto'>
+                                    <img
+                                        alt='sistema de ajuste de peso re ratones gaming'
+                                        src='/assets/img/steelseries-pesas.webp'
+                                    ></img>
                                 </div>
-                                <div className='col-md-8 m-auto m-auto'>
-                                    <h4>Ergonomía:</h4>
-                                    <p>
-                                        Este aspecto es fundamental para la
-                                        comodidad, el hecho que nuestra mano
-                                        ajuste perfectamente en el ratón y cada
-                                        botón quede al alcance de nuestros dedos
-                                        es crucial para disfrutar de una
-                                        experiencia agradable. Lamentablemente
-                                        este aspecto solo lo podremos comprobar
-                                        cuando tengamos el equipo en nuestras
-                                        manos. Para profundizar más, te
-                                        invitamos a leer nuestra "Guía avanzada
-                                        de Ratones Gaming"
-                                    </p>
-                                </div>
-                            </div>
-                            <div className='row mt-5 mb-5'>
-                                <div className='col-md-8 m-auto m-auto'>
-                                    <h4>Conectividad:</h4>
-                                    <p>
-                                        En este aspecto tenemos 2 opciones,
-                                        <strong>
+                                <div className='col-md-7 m-auto row'>
+                                    <div className='col-md-8 m-auto'>
+                                        <h3>Peso:</h3>
+                                        <p>
+                                            El peso que debes elegir depende
+                                            mucho del uso que le quieras dar.
+                                            Para un uso doméstico o de oficina
+                                            se busca la comodidad y lo ligero
+                                            que sea el dispositivo puede ayudar
+                                            en eso. Algunos jugadores también
+                                            optan por los más ligeros
+                                        </p>
+                                        <p>
                                             {' '}
-                                            "cableado" o "inalámbrico"
-                                        </strong>
-                                        . Depende del gusto y la necesidad, pero
-                                        solemos recomendar los cableados siempre
-                                        que sea posible, aunque en los últimos
-                                        tiempos han llegado al mercado
-                                        dispositivos inalámbricos que, en cuanto
-                                        a rendimiento, la diferencia se hace
-                                        prácticamente imperceptible
-                                    </p>
+                                            La otra cara de la moneda son los
+                                            GAMERS, para quienes el peso se
+                                            convierte en aliado a la hora de
+                                            tener{' '}
+                                            <strong>
+                                                máxima precisión, sobre todo en
+                                                juegos
+                                            </strong>{' '}
+                                            que requieran movimientos tanto
+                                            rápidos como precisos.
+                                        </p>
+                                        <p>
+                                            Hay que entender que si mezclamos
+                                            muchos DPI con un peso ligero el
+                                            ratón se va a volver casi
+                                            incontrolable. Por suerte muchos
+                                            ratones gaming vienen con un{' '}
+                                            <strong>
+                                                sistema de ajuste de peso
+                                            </strong>{' '}
+                                            para que lo puedas regular a tu
+                                            gusto
+                                        </p>
+                                    </div>
                                 </div>
-                                <div className='d-none d-sm-none d-md-block col-md-2 m-auto'>
-                                    <img src='/assets/svg/competition.svg'></img>
+                            </div>
+                            <div className='row nopadding mt-5'>
+                                <div className='col-md-5 m-auto p-5'>
+                                    <img
+                                        alt='raton corsair con botonera lateral'
+                                        src='/assets/img/raton-corsair-botones.webp'
+                                    ></img>
+                                </div>
+                                <div className='col-md-7 m-auto row'>
+                                    <div className='col-md-8 m-auto'>
+                                        <h3>Botones:</h3>
+                                        <p>
+                                            El número de botones al igual que
+                                            los otros aspectos agrega comodidad
+                                            para todo tipo de tareas. Puedes
+                                            tener un atajo para copiar y pegar o
+                                            para navegar por tus aplicaciones.
+                                        </p>
+                                        <p>
+                                            Es importante resaltar que los
+                                            ratones con un número elevado de
+                                            botones{' '}
+                                            <strong>
+                                                están pensados para juegos que
+                                                los requieren
+                                            </strong>
+                                            . Por ejemplo, Juegos donde
+                                            necesitas realizar una serie de
+                                            acciones en corto tiempo.{' '}
+                                        </p>
+                                        <p>
+                                            Aquí es hay que detenerse a pensar
+                                            el uso que le vas a dar al ratón,
+                                            para poder elegir uno con los
+                                            botones suficientes. Normalmente
+                                            estos vienen con un software para{' '}
+                                            <strong>
+                                                programar la función de cada
+                                                boton
+                                            </strong>{' '}
+                                            a tu gusto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='row nopadding mt-5'>
+                                <div className='col-md-7 m-auto row'>
+                                    <div className='col-md-8 m-auto'>
+                                        <h3>Ergonomía:</h3>
+                                        <p>
+                                            Este aspecto es fundamental para la
+                                            comodidad, el hecho que{' '}
+                                            <strong>
+                                                nuestra mano ajuste
+                                                perfectamente
+                                            </strong>{' '}
+                                            en el ratón y cada botón quede al
+                                            alcance de nuestros dedos es crucial
+                                            para disfrutar de una experiencia
+                                            agradable.
+                                        </p>
+                                        <p>
+                                            Dependiendo de si{' '}
+                                            <strong>
+                                                tu mano es grande o pequeña
+                                            </strong>{' '}
+                                            vas a tener que optar por un modelo
+                                            u otro. Dentro de este grupo de
+                                            ratones ergonómicos entran lo
+                                            verticales, estos pueden resultar
+                                            cómodos para algunas personas pero
+                                            pocas veces se usan para jugar.{' '}
+                                        </p>
+                                        <p>
+                                            Lamentablemente este aspecto solo lo
+                                            podremos comprobar cuando tengamos
+                                            el equipo en nuestras manos. Aunque
+                                            podemos tomar de referencia las
+                                            imágenes del producto, así como las
+                                            medidas.{' '}
+                                            <strong>
+                                                Si vas a pasar horas jugando
+                                            </strong>
+                                            , te recomendamos que busques un
+                                            ratón que sea{' '}
+                                            <strong>cómodo</strong>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className='col-md-5 m-auto p-5'>
+                                    <img
+                                        alt='raton ergonomico'
+                                        src='/assets/img/ergonomic-mouse.webp'
+                                    ></img>
+                                </div>
+                            </div>
+                            <div className='row nopadding mt-5'>
+                                <div className='col-md-7 m-auto row'>
+                                    <div className='col-md-8 m-auto'>
+                                        <h3>Conectividad:</h3>
+                                        <p>
+                                            En este aspecto tenemos 2 opciones,
+                                            <strong>
+                                                {' '}
+                                                "cableado" o "inalámbrico"
+                                            </strong>
+                                            . Depende del gusto y la necesidad,
+                                            pero solemos recomendar los
+                                            cableados siempre que sea posible,
+                                            aunque en los últimos tiempos han
+                                            llegado al mercado dispositivos
+                                            inalámbricos que, en cuanto a
+                                            rendimiento, la diferencia se hace
+                                            prácticamente imperceptible
+                                        </p>
+                                        <p>
+                                            En el ámbito de los inalámbricos se
+                                            pueden encontrar 2 tipos de
+                                            conexiones inalámbricas que
+                                            predominan,{' '}
+                                            <strong>
+                                                La bluetooth y la inalámbrica
+                                                común
+                                            </strong>
+                                            . Ambas tienen sus ventajas,
+                                            nosotros recomendamos la común
+                                            porque está mas enfocada a la
+                                            eficiencia, que es siempre lo que
+                                            buscamos los gamers para poder
+                                            competir a gran nivel.
+                                        </p>
+                                        <p>
+                                            Por otro lado, los cableados nos
+                                            brindan varias ventajas. Los{' '}
+                                            <strong>
+                                                tiempos de respuesta
+                                            </strong>{' '}
+                                            suelen rondar los mínimos actuales,
+                                            además de olvidarnos por completo de
+                                            las pilas o las baterías, que
+                                            siempre nos suelen dar problemas
+                                            cuando de inalámbrico se trata. Otro
+                                            punto importante es que han mejorado
+                                            mucho el material de fabricación,
+                                            los cables trenzados actuales son
+                                            muy duraderos
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className='col-md-5 m-auto'>
+                                    <img
+                                        alt='raton inalambrico'
+                                        src='/assets/img/raton-inalambrico.webp'
+                                    ></img>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className='sec3 nopadding'>
+                    {/* Aqui la tecera saccion, las tres secciones con articulos */}
+                    <div className='nopadding'>
                         <div className='row nopadding mitext'>
-                            <div className='col-sm-4 fondo1 p-5'>
-                                <div className='h3 card-title'>
-                                    <a href='#'>
-                                        Mejores ratones gaming baratos del 2021
+                            <div className='col-sm-4 fondo1 p-5 miflex'>
+                                <div>
+                                    <div className='h4 card-title'>
+                                        <a href='#'>
+                                            MEJORES RATONES GAMING 2021
+                                        </a>
+                                    </div>
+                                    <p className='card-text mitext'>
+                                        La mejor compra será, cuando existe un
+                                        equilibrio calidad-precio. En esta
+                                        página te orientamos para que hagas la
+                                        mejor elección y así seas un buen
+                                        gamer...
+                                    </p>
+                                    <a className='muted-text' href='#'>
+                                        leer más
                                     </a>
                                 </div>
-                                <p className='card-text mitext'>
-                                    La mejor compra será, cuando existe un
-                                    equilibrio calidad-precio. En esta página te
-                                    orientamos para que hagas la mejor elección
-                                    y así seas un buen gamer...
-                                </p>
                             </div>
-
-                            <div className='col-sm-4 fondo2 p-5'>
-                                <div className='h3 card-title'>
-                                    <a href='#'>
-                                        Ratón inalámbrico, explicación y
-                                        recomendaciones
+                            <div className='col-sm-4 fondo2 p-5 miflex'>
+                                <div>
+                                    <div className='h4 card-title'>
+                                        <a href='#'>RATÓN INALÁMBRICO</a>
+                                    </div>
+                                    <p className='card-text mitext'>
+                                        Para los que buscan{' '}
+                                        <strong>la comodida</strong> de no tener
+                                        que lidiar con el molesto cable y y
+                                        quieren sentirses totalmente libre,
+                                        aunque tendras que preocuparte por la
+                                        batería...
+                                    </p>
+                                    <a className='muted-text' href='#'>
+                                        leer más
                                     </a>
                                 </div>
-                                <p className='card-text mitext'>
-                                    Para los que buscan{' '}
-                                    <strong>la comodida</strong> de no tener que
-                                    lidiar con el molesto cable y y quieren
-                                    sentirses totalmente libre.
-                                </p>
                             </div>
-                            <div className='col-sm-4 fondo3 p-5'>
-                                <div className='h3 card-title'>
-                                    <a href='#'>
-                                        Ratones gaming con sensor Laser
+                            <div className='col-sm-4 fondo3 p-5 miflex'>
+                                <div>
+                                    <div className='h4 card-title'>
+                                        <a href='#'>RATONES GAMING CON CABLE</a>
+                                    </div>
+                                    <p className='card-text '>
+                                        no quieres estar pendiente todo el día
+                                        de la carga que le queda a la batería,
+                                        <strong> juega sin limite</strong> y
+                                        disfruta de tiempos de respuesta casi
+                                        inigualables...
+                                    </p>
+                                    <a className='muted-text' href='#'>
+                                        leer más
                                     </a>
                                 </div>
-                                <p className='card-text '>
-                                    Para los que no quieran gastar mucho dinero
-                                    en su perisferico pero
-                                    <strong>
-                                        {' '}
-                                        sin renunciar a la calidad
-                                    </strong>{' '}
-                                    y a prestaciones de primera
-                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='nopadding'>
+                        <div className='row nopadding'>
+                            <div className='col-md-6 nopadding'>
+                                <img
+                                    alt='mouse gamer logitech'
+                                    src='./assets/img/ratongaminglogitech.webp'
+                                />
+                            </div>
+                            <div className='col-md-6 sec2 p-5 miflex'>
+                                <div className='p-xl-5'>
+                                    <h2 className='text-center'>
+                                        Tu ratón para jugar
+                                    </h2>
+                                    <br />
+                                    <p>
+                                        Necesitas conocer qué tipo de ratón
+                                        gaming es el ideal para sacarle el
+                                        máximo provecho en tu juego favorito.
+                                        Dependiendo si juegas Shooter, RPG, o
+                                        algún otro genero juego vas a tener que
+                                        comprar un tipo de ratón u otro.
+                                    </p>
+                                    <br />
+                                    <div className='miflex mt-5'>
+                                        <a
+                                            className='mibtn'
+                                            href='#'
+                                            role='button'
+                                        >
+                                            Para juegos tipo MMO
+                                        </a>
+                                        <a
+                                            className='mibtn'
+                                            href='#'
+                                            role='button'
+                                        >
+                                            Para juegos tipo FPS
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className='pt-5 miflex'>
-                        <div className='row m-auto'>
-                            <div className='miflex'>
+                        <div className='m-auto'>
+                            <div className='miflex mb-5'>
                                 <h2>Principales marcas de ratones</h2>
                             </div>
-                            <div className='miflex'>
-                                <div className='col-sm-2 p-5'>
+                            <div className='miflex row'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Logitech'
                                         alt='logotipo marca logitech'
-                                        src='./assets/img/logitech.png'
+                                        src='./assets/img/logitech.webp'
                                     />{' '}
                                 </div>
-                                <div className='col-sm-2 p-5'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     {' '}
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Razer'
                                         alt='logotipo marca Razer'
-                                        src='./assets/img/razer.png'
+                                        src='./assets/img/razer.webp'
                                     />{' '}
                                 </div>
-                                <div className='col-sm-2 p-2'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     {' '}
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Corsair'
                                         alt='logotipo marca Corsair'
-                                        src='./assets/img/corsair.png'
+                                        src='./assets/img/corsair.webp'
                                     />
                                 </div>
-                                <div className='col-sm-2'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Mars Gaming'
                                         alt='logotipo marca Marz Gaming'
-                                        src='./assets/img/mars.png'
+                                        src='./assets/img/mars.webp'
                                     />
                                 </div>
                             </div>
-                            <div className='miflex'>
-                                <div className='col-sm-2 p-5'>
+                            <div className='miflex row'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Steelseries'
                                         alt='logotipo marca Steelseries'
-                                        src='./assets/img/steelseries.png'
+                                        src='./assets/img/steelseries.webp'
                                     />{' '}
                                 </div>
-                                <div className='col-sm-2 p-5'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     {' '}
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Asuz ROG'
                                         alt='logotipo marca Asuz ROG'
-                                        src='./assets/img/asuz.png'
+                                        src='./assets/img/asuz.webp'
                                     />{' '}
                                 </div>
-                                <div className='col-sm-2 p-2'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     {' '}
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Zowie'
                                         alt='logotipo marca Zowie'
-                                        src='./assets/img/sowie.png'
+                                        src='./assets/img/sowie.webp'
                                     />
                                 </div>
-                                <div className='col-sm-2 p-2'>
+                                <div className='col-sm-2 col-6 m-2'>
                                     <img
+                                        width='165'
+                                        height='165'
                                         title='Cooler Master'
                                         alt='logotipo marca Cooler Master'
-                                        src='./assets/img/cooler.png'
+                                        src='./assets/img/cooler.webp'
                                     />
                                 </div>
                             </div>
@@ -346,6 +583,19 @@ export const Sec1 = () => {
             </div>
             <style jsx>
                 {`
+                .mibtn:hover{
+                    background-color: #070086;
+                }
+                .mibtn{
+                    font-weight: 400;
+                    text-decoration: none;              
+                    color:#ddd;
+                    border: solid 1px black;
+                    border-radius:100px;
+                    margin-right:1em;
+                    padding: 0.6em;
+                    background-color: #2703A6;
+                }
                     .nopadding {
                         padding: 0 !important;
                         margin: 0 !important;
@@ -367,17 +617,29 @@ export const Sec1 = () => {
                         background-color: #f2b705;
                         color: #2a2a2a;
                     }
+                    .sec3 > div {                        
+                        display:flex;                        
+                        height:22em;
+                    }
+
                     .sec3 {
                         background-color: #141259;
                         color: #eaeaea;
                     }
-                    .headerimg {
+                    .headerimg {                        
                         padding: 1.2em;
                         color: #dddddd;
                         background: url('./assets/img/headerratongaming.webp');
                         background-repeat: no-repeat;
-                        background-size: cover;
+                        background-size: cover;                        
                         background-position: right;
+                    }
+                    @media (max-width : 600px){
+                        .headerimg { 
+                            background: #000;
+                        }
+                    }
+                    
                     }
                     .fondo-mio {
                         background: url('./assets/svg/fondoazul.svg');
@@ -394,14 +656,14 @@ export const Sec1 = () => {
                     }
                     .mitext a{
                         text-decoration: none;
-                        color: #e8e8e8;
+                        color: #b8b8b8;
                     }
                     .mitext a:hover{
                         text-decoration: none;
                         color: #b8b8e8;
                     }
                     .mitext p {
-                        color: #484848
+                        color: #989898;
                         font-size: 0.9em;
                         line-height: 1.3em;
                     }

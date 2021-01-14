@@ -14,10 +14,6 @@ function MyApp({ Component, pageProps }) {
                     }}
                 />
                 <meta
-                    name='Description'
-                    content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar y poderte hacerte la recomendacion que necesitas'
-                />
-                <meta
                     name='viewport'
                     content='width=device-width, initial-scale=1, maximum-scale=5'
                 />

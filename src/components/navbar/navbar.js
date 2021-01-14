@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import './navbar.module.css';
+import './navbar.module.scss';
 
 export const Navbar = () => {
     const router = useRouter();
@@ -23,10 +23,10 @@ export const Navbar = () => {
                     <span className='navbar-toggler-icon' />
                 </button>
                 <div
-                    className='collapse navbar-collapse'
+                    className='collapse navbar-collapse wrapper navbar-wrapper'
                     id='navbarNavDropdown'
                 >
-                    <ul className='navbar-nav navmio'>
+                    <ul className='navbar-nav navmio navbar22'>
                         <li className='nav-item'>
                             <Link className='active' href='/'>
                                 <a

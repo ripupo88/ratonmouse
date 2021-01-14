@@ -5,10 +5,13 @@ export const Sec1 = () => {
     return (
         <div className='page bgblue '>
             <Head>
-                <title>Te aaayudamos</title>
+                <title>
+                    Ratón gaming | Todos lo que necesitas saber sobre estos
+                    Periféricos
+                </title>
                 <meta
                     name='Description'
-                    content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar y poderte hacerte la recomendacion que necesitas'
+                    content='Pagina especializada en Ratones de PC, recolectamos informacion de diversas fuentes para resumirla en un solo lugar.'
                 />
             </Head>
             <div className='headerimg'>
@@ -356,6 +359,8 @@ export const Sec1 = () => {
                                     ></img>
                                 </div>
                             </div>
+                            <br />
+                            <br />
                         </div>
                     </div>
                     {/* Aqui la tecera saccion, las tres secciones con articulos */}
@@ -425,7 +430,7 @@ export const Sec1 = () => {
                                     src='./assets/img/ratongaminglogitech.webp'
                                 />
                             </div>
-                            <div className='col-md-6 sec2 p-5 miflex'>
+                            <div className='col-md-6 sec2 p-xl-3 miflex'>
                                 <div className='p-xl-5'>
                                     <h2 className='text-center'>
                                         Tu ratón para jugar
@@ -439,7 +444,7 @@ export const Sec1 = () => {
                                         algún otro genero juego vas a tener que
                                         comprar un tipo de ratón u otro.
                                     </p>
-                                    <br />
+
                                     <div className='miflex mt-5'>
                                         <a
                                             className='mibtn'
@@ -545,6 +550,8 @@ export const Sec1 = () => {
                                     />
                                 </div>
                             </div>
+                            <br />
+                            <br />
                         </div>
                     </div>
                     {/* <div className='indice col-sm-6 ml-auto mt-5'>

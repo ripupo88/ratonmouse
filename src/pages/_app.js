@@ -6,7 +6,7 @@ import { Footer } from '../components/footer/footer';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <html lang='es-ES'>
+        <div>
             <Head>
                 <script
                     dangerouslySetInnerHTML={{
@@ -48,7 +48,7 @@ function MyApp({ Component, pageProps }) {
                 integrity='sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj'
                 crossOrigin='anonymous'
             ></script> */}
-        </html>
+        </div>
     );
 }
 

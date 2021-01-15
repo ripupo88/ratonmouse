@@ -310,25 +310,27 @@ export const Sec1 = () => {
                                     <div className='col-md-8 m-auto'>
                                         <h3>Conectividad:</h3>
                                         <p>
-                                            En este aspecto tenemos 2 opciones,{' '}
+                                            En este aspecto tenemos dos
+                                            opciones:{' '}
                                             <strong>
-                                                "cableado" o "inalámbrico"
+                                                cableado o inalámbrico
                                             </strong>
-                                            . Depende del gusto y la necesidad,
-                                            pero solemos recomendar los
-                                            cableados siempre que sea posible,
-                                            aunque con el avance de la
-                                            tecnología han llegado al mercado
-                                            dispositivos inalámbricos que, en
-                                            cuanto a rendimiento, la diferencia
+                                            , dependiendo del gusto y la
+                                            necesidad. Nosotros solemos
+                                            recomendar el cableado siempre que
+                                            sea posible. Sin embargo, con el
+                                            avance de la tecnología han llegado
+                                            al mercado dispositivos
+                                            inalámbricos, que en cuanto a
+                                            rendimiento se refiere la diferencia
                                             se hace prácticamente imperceptible.
                                         </p>
                                         <p>
                                             En el ámbito de los inalámbricos, se
                                             pueden encontrar dos tipos de
-                                            conexiones que predominan, La{' '}
+                                            conexiones que predominan:{' '}
                                             <strong>
-                                                bluetooth y la inalámbrica común
+                                                Bluetooth y la inalámbrica común
                                             </strong>
                                             . Ambas tienen sus ventajas,
                                             nosotros recomendamos la común
@@ -456,14 +458,14 @@ export const Sec1 = () => {
                                             href='#'
                                             role='button'
                                         >
-                                            Para juegos tipo MMO
+                                            Para juegos MMO
                                         </a>
                                         <a
                                             className='mibtn'
                                             href='#'
                                             role='button'
                                         >
-                                            Para juegos tipo FPS
+                                            Para juegos FPS
                                         </a>
                                     </div>
                                 </div>

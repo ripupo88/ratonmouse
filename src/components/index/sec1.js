@@ -10,7 +10,7 @@ export const Sec1 = () => {
                 </title>
                 <meta
                     name='Description'
-                    content='Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para ti.'
+                    content='Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para que puedas hacer la mejor compra posible. Cuando compramos algo siempre queremos lo mejor, y eso es lo que obtendrás aquí.'
                 />
                 <link rel='canonical' href='https://ratonmouse.com/' />
             </Head>
@@ -18,7 +18,9 @@ export const Sec1 = () => {
                 <div className='row'>
                     <div className='col-md-2'></div>
                     <div className='col-md-4'>
-                        <h1 className='text-center m-5'>Ratones Gaming</h1>
+                        <h1 className='text-center m-5'>
+                            Ratones Gaming (la guía)
+                        </h1>
                         <p className='lead-mio'>
                             La selección de un buen ratón gaming, para que nos
                             acompañe en nuestros juegos, es una tarea difícil.
@@ -107,25 +109,27 @@ export const Sec1 = () => {
                                     <div className='col-md-8 m-auto'>
                                         <h3>DPI:</h3>
                                         <p>
-                                            El término Dots Per Inch proviene
-                                            del inglés y se asigna a las siglas
-                                            DPI, (puntos o píxeles por pulgada)
-                                            en español.{' '}
+                                            Las siglas DPI (Dots Per Inch) en
+                                            inglés y que en español significa
+                                            puntos o píxeles por pulgada. No es
+                                            más que, la{' '}
                                             <strong>
-                                                EL DPI es la cantidad de píxeles
-                                                que recorre el puntero
-                                            </strong>{' '}
-                                            en la pantalla, por cada pulgada que
-                                            se desplaza el ratón, es decir, son
-                                            los pixeles que recorrerá el cursor
-                                            al mover el ratón por pulgada.
+                                                cantidad de píxeles que recorre
+                                                el puntero en el monitor
+                                            </strong>
+                                            , por cada pulgada que se desplaza
+                                            el ratón, es decir, cuanto más alto
+                                            sea el valor DPI mayor será la
+                                            sensibilidad del ratón al movimiento
+                                            del cursor en la pantalla de nuestro
+                                            monitor.
                                         </p>
                                         <p>
                                             Saber cuántos DPI puede alcanzar
                                             nuestro ratón es muy importante, ya
                                             que en la actualidad los monitores
                                             varían el tamaño constantemente y
-                                            agregan cada vez más pixeles. Es
+                                            agregan cada vez más pixeles. Es{' '}
                                             <strong>
                                                 importante para los gamers
                                             </strong>{' '}
@@ -137,7 +141,7 @@ export const Sec1 = () => {
                                         <p>
                                             El sensor es una parte importante
                                             del ratón, existen{' '}
-                                            <strong>ópticos y laser</strong>. El
+                                            <strong>ópticos y láser</strong>. El
                                             nivel de precisión y la superficie
                                             donde puede o no funcionar varia uno
                                             del otro. Nosotros normalmente
@@ -194,9 +198,8 @@ export const Sec1 = () => {
                                             muchos DPI con un peso ligero el
                                             ratón se va a volver casi
                                             incontrolable. Por suerte muchos
-                                            ratones gaming vienen con un
+                                            ratones gaming vienen con un{' '}
                                             <strong>
-                                                {' '}
                                                 sistema de ajuste de peso
                                             </strong>{' '}
                                             para que lo puedas regular a tu
@@ -240,7 +243,7 @@ export const Sec1 = () => {
                                             que le vas a dar al ratón, para
                                             poder elegir uno con los botones
                                             suficientes. Normalmente estos
-                                            vienen con un software para
+                                            vienen con un software para{' '}
                                             <strong>
                                                 programar la función de cada
                                                 botón
@@ -307,7 +310,7 @@ export const Sec1 = () => {
                                     <div className='col-md-8 m-auto'>
                                         <h3>Conectividad:</h3>
                                         <p>
-                                            En este aspecto tenemos 2 opciones,
+                                            En este aspecto tenemos 2 opciones,{' '}
                                             <strong>
                                                 "cableado" o "inalámbrico"
                                             </strong>
@@ -323,7 +326,7 @@ export const Sec1 = () => {
                                         <p>
                                             En el ámbito de los inalámbricos, se
                                             pueden encontrar dos tipos de
-                                            conexiones que predominan, La
+                                            conexiones que predominan, La{' '}
                                             <strong>
                                                 bluetooth y la inalámbrica común
                                             </strong>
@@ -412,8 +415,8 @@ export const Sec1 = () => {
                                     </div>
                                     <p className='card-text '>
                                         no quieres estar pendiente todo el día
-                                        de la carga que le queda a la batería,
-                                        <strong> juega sin limite</strong> y
+                                        de la carga que le queda a la batería,{' '}
+                                        <strong>juega sin limite</strong> y
                                         disfruta de tiempos de respuesta casi
                                         inigualables...
                                     </p>

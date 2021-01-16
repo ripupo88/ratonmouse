@@ -6,7 +6,18 @@ export default function Articulo(props) {
     return (
         <div className='page bgblue col-mio m-auto'>
             <Head>
-                <title>Te aaayudamos</title>
+                <title>
+                    Ratones gaming | Los más baratos en 2021. Listados por
+                    precio.
+                </title>
+                <meta
+                    name='Description'
+                    content='Seleecionamos lo mejores ratones gaming baratos, listas por rango de precio, < 60, < 40, < 20 . Medimos la relacion calidad-precio de cada uno.'
+                />
+                <link
+                    rel='canonical'
+                    href='https://ratonmouse.com/articulo/mejores-ratones-gaming-baratos'
+                />
             </Head>
 
             <div className='row m-0 p-0 pb-5'>

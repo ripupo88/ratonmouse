@@ -17,9 +17,9 @@ export const Sec1 = () => {
             <div className='headerimg'>
                 <div className='row'>
                     <div className='col-md-2'></div>
-                    <div className='col-md-4'>
+                    <div className='col-md-7'>
                         <h1 className='text-center m-5'>
-                            Ratones Gaming (la guía)
+                            Ratones Gaming <br /> (la guía)
                         </h1>
                         <p className='lead-mio'>
                             La selección de un buen ratón gaming, para que nos

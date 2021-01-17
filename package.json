@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "next": "^10.0.0",
+    "next-seo": "^4.17.0",
     "react": "16.13.1",
     "react-cookie-consent": "^6.2.1",
     "react-dom": "16.13.1",

@@ -1,19 +1,36 @@
 import React from 'react';
 import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 export const Sec1 = () => {
     return (
         <div className='page bgblue '>
-            <Head>
-                <title>
-                    Ratones gaming | Todos lo que necesitas saber sobre ellos.
-                </title>
-                <meta
-                    name='Description'
-                    content='Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para que puedas hacer la mejor compra posible. Cuando compramos algo siempre queremos lo mejor, y eso es lo que obtendrás aquí.'
-                />
-                <link rel='canonical' href='https://ratonmouse.com/' />
-            </Head>
+            <NextSeo
+                title='Ratones gaming | Todos lo que necesitas saber sobre ellos.'
+                description='Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para que puedas hacer la mejor compra posible. Cuando compramos algo'
+                canonical='https://ratonmouse.com/'
+                openGraph={{
+                    url: 'https://ratonmouse.com/',
+                    title: 'Ratones gaming | Todos lo que necesitas saber',
+                    description:
+                        'Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para que puedas hacer la mejor compra posible. Cuando compramos algo',
+                    images: [
+                        {
+                            url:
+                                'https://ratonmouse.com/assets/img/ratongaminglogitech.webp',
+                            width: 800,
+                            height: 600,
+                            alt: 'Ratón logitech G502',
+                        },
+                    ],
+                    site_name: 'Ratonmouse',
+                }}
+                twitter={{
+                    handle: '@ripupo88',
+                    site: '@ratonmouse',
+                    cardType: 'summary_large_image',
+                }}
+            />
             <div className='headerimg'>
                 <div className='row'>
                     <div className='col-md-2'></div>

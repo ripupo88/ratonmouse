@@ -83,7 +83,7 @@ export default function Productos() {
 //         method: 'GET',
 //         redirect: 'follow',
 //     };
-//     const data = await fetch(`http://localhost:3030/raton`, requestOptions)
+//     const data = await fetch(`http://161.97.156.161:3030/raton`, requestOptions)
 //         .then((response) => response.text())
 //         .then((result) => JSON.parse(result))
 //         .catch((error) => console.log(error));

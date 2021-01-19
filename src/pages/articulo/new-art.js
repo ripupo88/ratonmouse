@@ -67,7 +67,7 @@ export default function Articulo(props) {
 //     //     method: 'GET',
 //     //     redirect: 'follow',
 //     // };
-//     // const res = await fetch(`http://localhost:3030/raton`, requestOptions);
+//     // const res = await fetch(`http://161.97.156.161:3030/raton`, requestOptions);
 //     // const datamia = await res.json();
 
 //     // datamia.data?.map((item, key) => {
@@ -100,7 +100,7 @@ export default function Articulo(props) {
 //     //     redirect: 'follow',
 //     // };
 //     // const res = await fetch(
-//     //     `http://localhost:3030/raton?detalles.modelo=${params.modelo}`,
+//     //     `http://161.97.156.161:3030/raton?detalles.modelo=${params.modelo}`,
 //     //     requestOptions
 //     // );
 //     // const data = await res.json();

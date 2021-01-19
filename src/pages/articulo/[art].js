@@ -55,11 +55,11 @@ export default function Articulo({ dat }) {
                         <div className='h5 hh'>Contenido</div>
                         <ol>
                             {dat.content.tableCont.map((item) => {
-                                <li>
-                                    <a href='#¿Comprar_el_ratón_gaming_más_barato?'>
-                                        {item}
-                                    </a>
-                                </li>;
+                                return (
+                                    <li>
+                                        <a>{item}</a>
+                                    </li>
+                                );
                             })}
                         </ol>
                     </div>
@@ -110,7 +110,10 @@ export async function getStaticPaths() {
         method: 'GET',
         redirect: 'follow',
     };
-    const res = await fetch(`http://localhost:3030/article`, requestOptions);
+    const res = await fetch(
+        `http://161.97.156.161:3030/article`,
+        requestOptions
+    );
     const resArticles = await res.json();
 
     resArticles.data?.map((item, key) => {
@@ -134,7 +137,7 @@ export async function getStaticProps({ params }) {
         redirect: 'follow',
     };
     const res = await fetch(
-        `http://localhost:3030/article?seo.url=${params.art}`,
+        `http://161.97.156.161:3030/article?seo.url=${params.art}`,
         requestOptions
     );
     const data = await res.json();

@@ -16,8 +16,7 @@ export const Sec1 = () => {
                         'Página especializada en Ratones de PC, recolectamos informacion de diversas fuentes y la resumimos para que puedas hacer la mejor compra posible. Cuando compramos algo',
                     images: [
                         {
-                            url:
-                                'https://ratonmouse.com/assets/img/ratongaminglogitech.webp',
+                            url: 'https://i.ibb.co/zSJrBHf/miraton.webp',
                             width: 800,
                             height: 600,
                             alt: 'Ratón logitech G502',
@@ -175,7 +174,7 @@ export const Sec1 = () => {
                                 <div className='col-md-5 m-auto p-0'>
                                     <img
                                         alt='Mouse gaming DPI'
-                                        src='/assets/img/mouse-gaming-dpi-2.webp'
+                                        src='https://i.ibb.co/6gKcwMB/mouse-gaming-dpi-2.webp'
                                     />
                                 </div>
                             </div>
@@ -183,7 +182,7 @@ export const Sec1 = () => {
                                 <div className='col-md-5 m-auto'>
                                     <img
                                         alt='sistema de ajuste de peso re ratones gaming'
-                                        src='/assets/img/steelseries-pesas.webp'
+                                        src='https://i.ibb.co/CP3Vw0z/steelseries-pesas.webp'
                                     ></img>
                                 </div>
                                 <div className='col-md-7 m-auto row'>
@@ -229,7 +228,7 @@ export const Sec1 = () => {
                                 <div className='col-md-5 m-auto p-5'>
                                     <img
                                         alt='raton corsair con botonera lateral'
-                                        src='/assets/img/raton-corsair-botones.webp'
+                                        src='https://i.ibb.co/pvsm6dn/raton-corsair-botones.webp'
                                     ></img>
                                 </div>
                                 <div className='col-md-7 m-auto row'>
@@ -318,7 +317,7 @@ export const Sec1 = () => {
                                 <div className='col-md-5 m-auto p-5'>
                                     <img
                                         alt='raton ergonomico'
-                                        src='/assets/img/ergonomic-mouse.webp'
+                                        src='https://i.ibb.co/KbxLrcv/ergonomic-mouse.webp'
                                     ></img>
                                 </div>
                             </div>
@@ -379,7 +378,7 @@ export const Sec1 = () => {
                                 <div className='col-md-5 m-auto'>
                                     <img
                                         alt='raton inalambrico'
-                                        src='/assets/img/raton-inalambrico.webp'
+                                        src='https://i.ibb.co/Y37VQCW/raton-inalambrico.webp'
                                     ></img>
                                 </div>
                             </div>
@@ -451,7 +450,7 @@ export const Sec1 = () => {
                             <div className='col-md-6 nopadding'>
                                 <img
                                     alt='mouse gamer logitech'
-                                    src='./assets/img/ratongaminglogitech.webp'
+                                    src='https://i.ibb.co/zSJrBHf/miraton.webp'
                                 />
                             </div>
                             <div className='col-md-6 sec2 p-xl-3 miflex'>
@@ -501,7 +500,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Logitech'
                                         alt='logotipo marca logitech'
-                                        src='./assets/img/logitech.webp'
+                                        src='https://i.ibb.co/qszf5c1/logitech.webp'
                                     />{' '}
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -511,7 +510,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Razer'
                                         alt='logotipo marca Razer'
-                                        src='./assets/img/razer.webp'
+                                        src='https://i.ibb.co/DzPJJb7/razer.webp'
                                     />{' '}
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -521,7 +520,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Corsair'
                                         alt='logotipo marca Corsair'
-                                        src='./assets/img/corsair.webp'
+                                        src='https://i.ibb.co/fv2d8jR/corsair.webp'
                                     />
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -530,7 +529,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Mars Gaming'
                                         alt='logotipo marca Marz Gaming'
-                                        src='./assets/img/mars.webp'
+                                        src='https://i.ibb.co/NTg0DTv/mars.webp'
                                     />
                                 </div>
                             </div>
@@ -541,7 +540,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Steelseries'
                                         alt='logotipo marca Steelseries'
-                                        src='./assets/img/steelseries.webp'
+                                        src='https://i.ibb.co/wW1WZ4r/steelseries.webp'
                                     />{' '}
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -551,7 +550,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Asuz ROG'
                                         alt='logotipo marca Asuz ROG'
-                                        src='./assets/img/asuz.webp'
+                                        src='https://i.ibb.co/8Ph9nF0/asuz.webp'
                                     />{' '}
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -561,7 +560,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Zowie'
                                         alt='logotipo marca Zowie'
-                                        src='./assets/img/sowie.webp'
+                                        src='https://i.ibb.co/7WGTgLq/sowie.webp'
                                     />
                                 </div>
                                 <div className='col-sm-2 col-6 m-2'>
@@ -570,7 +569,7 @@ export const Sec1 = () => {
                                         height='165'
                                         title='Cooler Master'
                                         alt='logotipo marca Cooler Master'
-                                        src='./assets/img/cooler.webp'
+                                        src='https://i.ibb.co/7zSrFLy/cooler.webp'
                                     />
                                 </div>
                             </div>
@@ -660,7 +659,7 @@ export const Sec1 = () => {
                     .headerimg {                        
                         padding: 1.2em;
                         color: #dddddd;
-                        background: url('./assets/img/headerratongaming.webp');
+                        background: url('https://i.ibb.co/hB2MtgR/headerratongaming.webp');
                         background-repeat: no-repeat;
                         background-size: cover;                        
                         background-position: right;

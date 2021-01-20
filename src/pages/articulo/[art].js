@@ -18,7 +18,7 @@ export default function Articulo({ dat }) {
                         {
                             url: `https://ratonmouse.com/assets/img/${dat.content.img.name}.webp`,
                             width: 800,
-                            height: 600,
+                            height: 'auto',
                             alt: dat.content.img.alt,
                         },
                     ],

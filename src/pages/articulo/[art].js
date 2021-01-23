@@ -3,7 +3,7 @@ import React from 'react';
 import { NextSeo } from 'next-seo';
 
 export default function Articulo({ dat }) {
-    console.log('dat', dat);
+    if (!dat) return null;
     return (
         <div className='page bgblue col-mio m-auto'>
             <NextSeo
@@ -127,7 +127,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     };
 }
 
@@ -141,8 +141,9 @@ export async function getStaticProps({ params }) {
         requestOptions
     );
     const data = await res.json();
-    console.log(data);
+
     const dat = data.data[0];
 
-    return { props: { dat } };
+    if (!dat) return { notFound: true };
+    else return { props: { params, dat } };
 }

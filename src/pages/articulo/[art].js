@@ -145,5 +145,5 @@ export async function getStaticProps({ params }) {
     const dat = data.data[0];
 
     if (!dat) return { notFound: true };
-    else return { props: { params, dat } };
+    else return { props: { params, dat }, revalidate: 1 };
 }

@@ -16,7 +16,7 @@ export default function Articulo({ dat }) {
                     description: dat.seo.description,
                     images: [
                         {
-                            url: `https://ratonmouse.com/assets/img/${dat.content.img.name}.webp`,
+                            url: dat.content.img.name,
                             width: 800,
                             height: 'auto',
                             alt: dat.content.img.alt,
@@ -42,7 +42,7 @@ export default function Articulo({ dat }) {
                                 alt='mejores ratones gaming baratos'
                                 width='800'
                                 height='500'
-                                src='/assets/img/Raton-Gaming-muestra.webp'
+                                src={dat.content.img.name}
                             />
                             {dat.content.img.credit ? (
                                 <span className='text-muted'>

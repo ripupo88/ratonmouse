@@ -39,7 +39,7 @@ export default function Articulo({ dat }) {
                     <div className='m-auto mt-3 col-xl-8 m-auto miflex'>
                         <div>
                             <img
-                                alt='mejores ratones gaming baratos'
+                                alt={dat.content.h1}
                                 width='800'
                                 height='500'
                                 src={dat.content.img.name}
@@ -57,7 +57,22 @@ export default function Articulo({ dat }) {
                             {dat.content.tableCont.map((item) => {
                                 return (
                                     <li>
-                                        <a>{item}</a>
+                                        <a
+                                            href={
+                                                '#' +
+                                                item
+                                                    .normalize('NFD')
+                                                    .replace(
+                                                        /[\u0300-\u036f]/g,
+                                                        ''
+                                                    )
+                                                    .replace(/[^\w\s]/gi, '')
+                                                    .toLowerCase()
+                                                    .replace(/ /g, '-')
+                                            }
+                                        >
+                                            {item}
+                                        </a>
                                     </li>
                                 );
                             })}
